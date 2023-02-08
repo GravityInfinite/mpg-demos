@@ -1,0 +1,9 @@
+/**index.wxss**/
+.box {
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ccc;
+}
+
+button {
+  margin-bottom: 10px;
+}

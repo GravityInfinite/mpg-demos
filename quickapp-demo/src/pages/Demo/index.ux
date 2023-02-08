@@ -1,0 +1,245 @@
+<template>
+  <div class="wrapper">
+    <input class="btn" type="button" value="注册" onclick="handleRegister" />
+    <input
+      class="btn"
+      type="button"
+      value="埋点事件上报"
+      onclick="handleEvent"
+    />
+    <input
+      class="btn"
+      type="button"
+      value="查询用户信息"
+      onclick="handleQueryUser"
+    />
+
+    <input
+      class="btn"
+      type="button"
+      value="profileSet"
+      onclick="handleProfileSet"
+    />
+    <input
+      class="btn"
+      type="button"
+      value="profileSetOnce"
+      onclick="handleProfileSetOnce"
+    />
+    <input
+      class="btn"
+      type="button"
+      value="profileIncrement"
+      onclick="handleProfileIncrement"
+    />
+    <input
+      class="btn"
+      type="button"
+      value="profileDelete"
+      onclick="handleProfileDelete"
+    />
+    <input
+      class="btn"
+      type="button"
+      value="profileAppend"
+      onclick="handleProfileAppend"
+    />
+    <input
+      class="btn"
+      type="button"
+      value="profileUnset"
+      onclick="handleProfileUnset"
+    />
+
+    <input
+      class="btn"
+      type="button"
+      value="registerApp"
+      onclick="handleRegisterApp"
+    />
+
+    <input
+      class="btn"
+      type="button"
+      value="registerEvent"
+      onclick="handleRegisterEvent"
+    />
+    <input
+      class="btn"
+      type="button"
+      value="loginEvent"
+      onclick="handleLoginEvent"
+    />
+    <input
+      class="btn"
+      type="button"
+      value="logoutEvent"
+      onclick="handleLogoutEvent"
+    />
+
+    <input
+      class="btn"
+      type="button"
+      value="customTrack"
+      onclick="handleCustomTrack"
+    />
+  </div>
+</template>
+
+<script>
+import router from '@system.router'
+
+
+export default {
+  // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
+  private: {
+    title: '欢迎体验快应用开发',
+  },
+  onShow() {
+    // ge.pageShow()
+  },
+  onInit() {
+
+    // --------------------------------- Optimize SEO Start
+    // 当 titlebar 的文案与搜索的标题不一致时，请先设置 titlebar
+    // 备注：this.$page.setMeta 需要引擎 1090 版本及以上才支持，因此这段做注释处理；
+    this.$page.setTitleBar({ text: '欢迎体验快应用开发' })
+    if (this.$page.setMeta) {
+      this.$page.setMeta({
+        title: '快应用示例模版',
+        description:
+          '快应用是移动互联网新型应用生态，与手机系统深度整合，为用户提供更加场景化的体验。具备传统APP完整的应用体验，但无需安装、即点即用。',
+      })
+    }
+    // --------------------------------- Optimize SEO End
+  },
+
+  onDetailBtnClick() {
+    // 跳转到应用内的某个页面，router用法详见：文档 -> 接口 -> 页面路由
+    router.push({
+      uri: '/pages/DemoDetail',
+    })
+  },
+  handleRegister() {
+    ge
+      .register({
+        name: "your_name",
+        channel: "your_channel",
+        version: 123,
+        click_id: "your_click_id",
+        wx_openid: "your_wx_openid",
+        wx_unionid: "your_wx_unionid",
+      })
+      .then(() => {
+        console.log("success");
+      });
+  },
+  handleEvent() {
+    ge
+      .handleEvent({
+        event_type: "pay",
+        properties: {
+          amount: 100,
+          real_amount: 200,
+        },
+        timestamp: 1000,
+      })
+      .then(() => {
+        console.log("success");
+      });
+  },
+  handleQueryUser() {
+    ge.queryUser().then((data) => {
+      console.log(data);
+    });
+  },//事件上报相关demo
+
+  // 若某key已存在则覆盖,否则将自动创建并赋值
+  handleProfileSet() {
+    ge.userSet({
+      friends_num: 1,
+      arr: [1, 2],
+      "$gender": "x",
+    })
+  },
+
+  // 此事件在第一次$MPLaunch后会自动调用，若该key已存在则忽略，否则将自动创建并赋值
+  handleProfileSetOnce() {
+    ge.userSetOnce({
+      // 时间类型严格按照此formatter格式
+      "$first_visit_time": "2022-11-11 18:45:41"
+    })
+  },
+
+  // 增加或减少一个用户的某个NUMBER类型的Profile值
+  handleProfileIncrement() {
+    ge.userAdd({
+      friends_num: 2
+    })
+  },
+
+  // 删除一个用户的整个 Profile
+  handleProfileDelete() {
+    ge.userDel()
+  },
+
+  // 向某个用户的某个数组类型的Profile添加一个或者多个值,默认不去重
+  handleProfileAppend() {
+    ge.userAppend({
+      arr: [3, 4]
+    })
+  },
+
+  // 将某个用户的某些属性值设置为空
+  handleProfileUnset() {
+    ge.userUnset("arr")
+  },
+
+  // 设置所有事件都需要添加的属性
+  handleRegisterApp() {
+    ge.registerApp({
+      "test_register_app_key": "test_register_app_value"
+    })
+  },
+
+  handleRegisterEvent() {
+    ge.registerEvent()
+  },
+  handleLoginEvent() {
+    ge.loginEvent()
+  },
+  handleLogoutEvent() {
+    ge.logoutEvent()
+  },
+
+  // 自定义track
+  handleCustomTrack() {
+    ge.track("test", {
+      $pay_type: "rmb"
+    });
+  },
+}
+</script>
+
+<style lang="less">
+@import './../../assets/styles/style.less';
+
+.wrapper {
+  .flex-box-mixins(column, center, center);
+  .title {
+    font-size: 8 * @size-factor;
+    text-align: center;
+    color: @black;
+  }
+
+  .btn {
+    width: 90 * @size-factor;
+    height: 16 * @size-factor;
+    border-radius: 8 * @size-factor;
+    background-color: @brand;
+    color: @white;
+    font-size: 30px;
+    margin-top: 16 * @size-factor;
+  }
+}
+</style>
