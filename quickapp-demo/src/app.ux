@@ -1,0 +1,28 @@
+<script>
+/**
+ * 应用级别的配置，供所有页面公用
+ */
+
+const $utils = require('./helper/utils').default
+const $apis = require('./helper/apis').default
+import GravityEngine from "./helper/gravityengine.quick"
+import storage from "@system.storage";
+
+/* @desc: 注入方法至全局 global,以便页面调用 */
+const hook2global = global.__proto__ || global
+hook2global.$utils = $utils
+hook2global.$apis = $apis
+
+
+export default {
+  async onCreate() {
+    const config = {
+      accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
+      clientId: "your_client_id", // 项目的 APP ID
+      name: 'ge', // 全局变量名称
+    };
+    new GravityEngine(config);
+    ge.init();
+  }
+}
+</script>

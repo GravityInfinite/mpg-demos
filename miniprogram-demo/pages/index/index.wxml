@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view>
+  <view class="box">
+    <button type="primary" bindtap="handleRegister">注册</button>
+    <button type="primary" bindtap="handleEvent">埋点事件上报</button>
+    <button type="primary" bindtap="handleQueryUser">查询用户信息</button>
+  </view>
+  <view class="box">
+    <button type="primary" bindtap="handleUserSet">userSet</button>
+    <button type="primary" bindtap="handleUserSetOnce">userSetOnce</button>
+    <button type="primary" bindtap="handleUserAdd">userAdd</button>
+    <button type="primary" bindtap="handleUserDel">userDel</button>
+    <button type="primary" bindtap="handleUserAppend">userAppend</button>
+    <button type="primary" bindtap="handleUserUnset">userUnset</button>
+  </view>
+  <view class="box">
+    <button type="primary" bindtap="handleRegisterApp">registerApp</button>
+  </view>
+  <view class="box">
+    <button type="primary" bindtap="handleRegisterEvent">registerEvent</button>
+    <button type="primary" bindtap="handleLoginEvent">loginEvent</button>
+    <button type="primary" bindtap="handleLogoutEvent">logoutEvent</button>
+  </view>
+  <view class="box">
+    <button type="primary" bindtap="handleCustomTrack">customTrack</button>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+{
+  "__version__": "1.0.1",
+  "options": {
+    "wechatgame": {
+      "appid": "wx16e722502b86127d"
+    }
+  }
+}
