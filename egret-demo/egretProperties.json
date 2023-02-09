@@ -1,0 +1,38 @@
+{
+  "engineVersion": "5.4.1",
+  "compilerVersion": "5.4.1",
+  "template": {},
+  "target": {
+    "current": "web"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "dragonBones"
+    },
+    {
+      "name": "game"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "promise"
+    },
+    {
+      "name": "GravityAnalyticsSDK",
+      "path": "./libs/GravityAnalyticsSDK"
+    }
+  ],
+  "vivo": {
+    "usePlugin": true
+  }
+}
