@@ -5,7 +5,7 @@
 
 const $utils = require('./helper/utils').default
 const $apis = require('./helper/apis').default
-import GravityEngine from "./helper/gravityengine.quick"
+import GravityEngine from "./helper/gravityengine.quick.min"
 import storage from "@system.storage";
 
 /* @desc: 注入方法至全局 global,以便页面调用 */

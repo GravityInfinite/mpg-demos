@@ -180,7 +180,7 @@ const config = {
   enableLog: false, // 是否开启日志打印
   enablePersistence: true, // 是否缓存
 };
-const ge = new GravityEngine(config);
+const ge = new GravityAnalyticsAPI(config);
 ge.init();
 ```
 
@@ -188,11 +188,11 @@ ge.init();
 
 #### 1.6.1 导入 SDK
 
-- 将 `gravityengine.quick.js` 文件导入快应用项目中；
+- 将 `gravityengine.quick.min.js` 文件导入快应用项目中；
 - 在 `app.ux` 文件中引入 SDK：
 
 ```javascript
-import ge from "./helper/gravityengine.quick";
+import GravityEngine from "./helper/gravityengine.quick.min";
 ```
 
 #### 1.6.2 配置初始化参数

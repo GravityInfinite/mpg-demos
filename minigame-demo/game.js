@@ -2,7 +2,7 @@ import './js/libs/weapp-adapter'
 import './js/libs/symbol'
 import Main from './js/main'
 
-import GravityEngine from './js/utils/gravityengine.mg.wx'
+import GravityEngine from './js/utils/gravityengine.mg.wx.min'
 
 const config = {
   accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",

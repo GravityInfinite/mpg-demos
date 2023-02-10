@@ -82,8 +82,9 @@ function _toPropertyKey(arg) {
 }
 
 var Config = {
-  LIB_VERSION: "3.2.7",
+  LIB_VERSION: "undefined",
   LIB_NAME: "MG",
+  LIB_STACK: "egret",
   BASE_URL: "https://turbo.api.plutus-cat.com/event_center/api/v1"
 };
 
@@ -1595,14 +1596,14 @@ var AutoTrackBridge$2 = /*#__PURE__*/_createClass(function AutoTrackBridge(insta
   this.config = config || {};
   // VIVO 快游戏 的 onShow 定义为回到前台的事件， 所以此处添加启动时的onshow。
   if (this.config.appShow) {
-    this.taInstance._internalTrack("ta_mg_show");
+    this.taInstance._internalTrack("$MPShow");
   }
   if (this.config.appHide) {
-    this.taInstance.timeEvent("ta_mg_hide");
+    this.taInstance.timeEvent("$MPHide");
   }
   qg.onShow(function () {
     if (_this.config.appHide) {
-      _this.taInstance.timeEvent("ta_mg_hide");
+      _this.taInstance.timeEvent("$MPHide");
     }
     if (_this.config.appShow) {
       var properties = {};
@@ -1610,7 +1611,7 @@ var AutoTrackBridge$2 = /*#__PURE__*/_createClass(function AutoTrackBridge(insta
       if (_.isFunction(_this.config.callback)) {
         _.extend(properties, _this.config.callback("appShow"));
       }
-      _this.taInstance._internalTrack("ta_mg_show");
+      _this.taInstance._internalTrack("$MPShow");
     }
   });
   qg.onHide(function () {
@@ -1620,7 +1621,7 @@ var AutoTrackBridge$2 = /*#__PURE__*/_createClass(function AutoTrackBridge(insta
       if (_.isFunction(_this.config.callback)) {
         _.extend(properties, _this.config.callback("appHide"));
       }
-      _this.taInstance._internalTrack("ta_mg_hide");
+      _this.taInstance._internalTrack("$MPHide");
     }
   });
 });
@@ -1846,14 +1847,14 @@ var AutoTrackBridge$3 = /*#__PURE__*/_createClass(function AutoTrackBridge(insta
     if (_.isFunction(this.config.callback)) {
       _.extend(properties, this.config.callback('appShow'));
     }
-    this.taInstance._internalTrack('ta_mg_show', properties);
+    this.taInstance._internalTrack('$MPShow', properties);
   }
   if (this.config.appHide) {
-    this.taInstance.timeEvent('ta_mg_hide');
+    this.taInstance.timeEvent('$MPHide');
   }
   api.onShow(function () {
     if (_this.config.appHide) {
-      _this.taInstance.timeEvent('ta_mg_hide');
+      _this.taInstance.timeEvent('$MPHide');
     }
     if (_this.config.appShow) {
       var properties = {};
@@ -1861,7 +1862,7 @@ var AutoTrackBridge$3 = /*#__PURE__*/_createClass(function AutoTrackBridge(insta
       if (_.isFunction(_this.config.callback)) {
         _.extend(properties, _this.config.callback('appShow'));
       }
-      _this.taInstance._internalTrack('ta_mg_show', properties);
+      _this.taInstance._internalTrack('$MPShow', properties);
     }
   });
   api.onHide(function () {
@@ -1871,7 +1872,7 @@ var AutoTrackBridge$3 = /*#__PURE__*/_createClass(function AutoTrackBridge(insta
       if (_.isFunction(_this.config.callback)) {
         _.extend(properties, _this.config.callback('appHide'));
       }
-      _this.taInstance._internalTrack('ta_mg_hide', properties);
+      _this.taInstance._internalTrack('$MPHide', properties);
     }
   });
 });
@@ -2594,7 +2595,7 @@ var SenderQueue = /*#__PURE__*/function () {
             data["event_list"] = data["event_list"].concat(taskData["event_list"]);
           }
           var flushTime = new Date().getTime();
-          data['$flush_time'] = flushTime;
+          data["$flush_time"] = flushTime;
           var element;
           element = new HttpTask(JSON.stringify(data), httpTask0.serverUrl, httpTask0.tryCount, httpTask0.timeout, httpTask0 === null || httpTask0 === void 0 ? void 0 : httpTask0.debugMode, httpTask0.callback);
           element.run();
@@ -2631,6 +2632,7 @@ var DEFAULT_CONFIG = {
  * 异步获取系统信息，初始化预置属性
  *
  * $lib_version SDK 版本
+ * $lib SDK 技术框架
  * $network_type 上传事件时的网络类型
  * $manufacture 设备制造商
  * $model 设备型号，如iPhone 8
@@ -2641,7 +2643,8 @@ var DEFAULT_CONFIG = {
  */
 var systemInformation = {
   properties: {
-    $lib_version: Config.LIB_VERSION
+    $lib_version: Config.LIB_VERSION,
+    $lib: Config.LIB_STACK
   },
   getSystemInfo: function getSystemInfo(callback) {
     var that = this;
@@ -2661,6 +2664,7 @@ var systemInformation = {
               $model: res["model"],
               $screen_width: Number(res["screenWidth"]),
               $screen_height: Number(res["screenHeight"]),
+              $system_language: res.language,
               $os: res.platform,
               $os_version: res.system
             };
@@ -3453,6 +3457,8 @@ var GravityEngineAPI = /*#__PURE__*/function () {
         return "bytedance";
       } else if (query.gdt_vid) {
         return "tencent";
+      } else if (query.bd_vid) {
+        return "baidu";
       } else {
         return "";
       }
@@ -3485,7 +3491,8 @@ var GravityEngineAPI = /*#__PURE__*/function () {
     key: "register",
     value: function register() {
       var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      if (!this._isReady()) {
+      if (!this._state.initComplete) {
+        console.warn("register must be called after init");
         return;
       }
       if (!(e !== null && e !== void 0 && e.name)) {
@@ -3542,6 +3549,10 @@ var GravityEngineAPI = /*#__PURE__*/function () {
         data.ad_data = {
           gdt_vid: (query === null || query === void 0 ? void 0 : query.gdt_vid) || ""
         };
+      } else if (platform === "baidu") {
+        data.ad_data = {
+          bd_vid: (query === null || query === void 0 ? void 0 : query.bd_vid) || ""
+        };
       }
       if (query !== null && query !== void 0 && query.turbo_promoted_object_id) {
         data.promoted_object_id = query.turbo_promoted_object_id;
@@ -3553,7 +3564,8 @@ var GravityEngineAPI = /*#__PURE__*/function () {
     key: "handleEvent",
     value: function handleEvent() {
       var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-      if (!this._isReady()) {
+      if (!this._state.initComplete) {
+        console.warn("handleEvent must be called after init");
         return;
       }
       var data = {
@@ -3579,7 +3591,8 @@ var GravityEngineAPI = /*#__PURE__*/function () {
   }, {
     key: "queryUser",
     value: function queryUser() {
-      if (!this._isReady()) {
+      if (!this._state.initComplete) {
+        console.warn("queryUser must be called after init");
         return;
       }
       var data = {
@@ -3684,6 +3697,8 @@ var GravityEngineAPI = /*#__PURE__*/function () {
     value: function getPresetProperties() {
       var properties = systemInformation.properties;
       var presetProperties = {};
+      var system_language = properties["$system_language"];
+      presetProperties.system_language = _.isUndefined(system_language) ? "" : system_language;
       var os = properties["$os"];
       presetProperties.os = _.isUndefined(os) ? "" : os;
       var screenWidth = properties["$screen_width"];
@@ -3708,6 +3723,7 @@ var GravityEngineAPI = /*#__PURE__*/function () {
           // "$device_id": presetProperties.deviceId,
           $screen_width: presetProperties.screenWidth,
           $screen_height: presetProperties.screenHeight,
+          $system_language: presetProperties.system_language,
           $os: presetProperties.os,
           $os_version: presetProperties.osVersion,
           $network_type: presetProperties.networkType,
@@ -4725,6 +4741,8 @@ var GravityEngineAPIForNative = /*#__PURE__*/function () {
       egret.ExternalInterface.addCallback("getPresetProperties", function (n) {
         var properties = JSON.parse(n);
         var presetProperties = {};
+        var system_language = properties["$system_language"];
+        presetProperties.system_language = _.isUndefined(system_language) ? "" : system_language;
         var os = properties["$os"];
         presetProperties.os = _.isUndefined(os) ? "" : os;
         var screenWidth = properties["$screen_width"];
@@ -4745,15 +4763,16 @@ var GravityEngineAPIForNative = /*#__PURE__*/function () {
         presetProperties.manufacturer = _.isUndefined(manufacturer) ? "" : manufacturer;
         presetProperties.toEventPresetProperties = function () {
           return {
-            "$device_model": presetProperties.deviceModel,
-            "$device_id": presetProperties.deviceId,
-            "$screen_width": presetProperties.screenWidth,
-            "$screen_height": presetProperties.screenHeight,
-            "$os": presetProperties.os,
-            "$os_version": presetProperties.osVersion,
-            "$network_type": presetProperties.networkType,
-            "$zone_offset": presetProperties.zoneOffset,
-            "$manufacturer": presetProperties.manufacturer
+            $device_model: presetProperties.deviceModel,
+            $device_id: presetProperties.deviceId,
+            $screen_width: presetProperties.screenWidth,
+            $screen_height: presetProperties.screenHeight,
+            $system_language: presetProperties.system_language,
+            $os: presetProperties.os,
+            $os_version: presetProperties.osVersion,
+            $network_type: presetProperties.networkType,
+            $zone_offset: presetProperties.zoneOffset,
+            $manufacturer: presetProperties.manufacturer
           };
         };
         callback(presetProperties);
