@@ -82,7 +82,7 @@ function _toPropertyKey(arg) {
 }
 
 var Config = {
-  LIB_VERSION: "undefined",
+  LIB_VERSION: "3.3.5",
   LIB_NAME: "MG",
   LIB_STACK: "egret",
   BASE_URL: "https://turbo.api.plutus-cat.com/event_center/api/v1"
@@ -1053,7 +1053,7 @@ var AutoTrackBridge = /*#__PURE__*/function () {
 
     /*
       _generateShareInfo() {
-            return JSON.stringify({
+           return JSON.stringify({
               i: this.taInstance.getDistinctId(),
               a: this.taInstance.getAccountId(),
               p: this._getCurrentPath(),
@@ -1082,7 +1082,7 @@ var AutoTrackBridge = /*#__PURE__*/function () {
               if (_.isUndefined(ret.path) || ret.path === '') {
                   ret.path = this._getCurrentPath();
               }
-                if (_.isString(ret.path)) {
+               if (_.isString(ret.path)) {
                   if (-1 === ret.path.indexOf('?')) {
                       ret.path = ret.path + '?';
                   } else if ('&' !== ret.path.slice(-1)) {
