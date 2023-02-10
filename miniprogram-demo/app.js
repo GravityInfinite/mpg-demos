@@ -1,6 +1,6 @@
 // app.js
 // import turbo from "./utils/turbo.min.js"
-import GravityEngine from "./utils/gravityengine.wx.js";
+import GravityEngine from "./utils/gravityengine.wx.min.js";
 
 const config = {
   accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",

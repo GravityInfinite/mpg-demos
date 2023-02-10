@@ -12,5 +12,5 @@ loadLib("libs/laya.core.js")
 loadLib("libs/laya.ui.js")
 loadLib("libs/laya.physics.js")
 //-----libs-end-------
-loadLib("js/gravityengine.mg.layats.js");
+loadLib("js/gravityengine.mg.layats.min.js");
 loadLib("js/bundle.js");
