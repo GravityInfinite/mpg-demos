@@ -122,6 +122,7 @@ loadLib("js/bundle.js");
 JavaScript 项目：
 
 - 将 `gravityengine.mg.laya.min.js` 导入工程：
+
   ```javascript
   import GravityAnalyticsAPI from "gravityengine.mg.laya.min.js";
   ```
@@ -210,7 +211,7 @@ const ge = new GravityEngine(config);
 ge.init();
 ```
 
-> 其他可能会用到的配置有：
+其他可能会用到的配置有：
 
 ```javascript
 enableLog: true, // 是否打开日志打印
@@ -250,10 +251,12 @@ ge.register({
 });
 ```
 
-> 📢 注意：此方法为必须调用的，不然无法完成其他方法的正常调用！
+> [!ATTENTION]
+> 此方法为必须调用的，不然无法完成其他方法的正常调用！
 
 ### 2.2 公共属性
 
+> [!Tip]
 > 公共事件属性是所有事件（包括自动采集事件）都会包含的属性，用户属性中不会包含。
 >
 > 本节会介绍如何设置公共事件属性和动态公共属性。如果公共属性与事件中设置的自定义属性有相同 key 值，则最终的属性会根据下述优先级取值：
@@ -262,6 +265,7 @@ ge.register({
 
 您可以调用 `setSuperProperties`来设置公共事件属性，公共事件属性的格式要求与事件属性一致。在设置时只能传入常量，适合设置变化不频繁的属性。
 
+> [!Tip]
 > 根据属性优先级，自定义属性优先级高于事件公共属性，因此事件公共属性也可以作为某个属性的缺省值，在需要修改的事件中设置同名 Key 覆盖缺省值。
 
 ```js
@@ -393,6 +397,7 @@ ge.track("Enter_Shop", { product_id: "A1354" });
 ge.userSet({ vip_level: "钻石会员" });
 ```
 
+> [!Tip]
 > 属性格式要求与事件属性保持一致。
 
 ### 4.2 初始化用户属性（userSetOnce）
@@ -404,6 +409,7 @@ ge.userSet({ vip_level: "钻石会员" });
 ge.userSetOnce({ user_name: "TestUser" });
 ```
 
+> [!Tip]
 > 属性格式要求与事件属性保持一致。
 
 ### 4.3 累加用户属性（userAdd）
@@ -415,6 +421,7 @@ ge.userSetOnce({ user_name: "TestUser" });
 ge.userAdd({ total_revenue: 50 });
 ```
 
+> [!Tip]
 > 设置的属性 key 为字符串，Value 只允许为数值。
 
 ### 4.4 重置用户属性（userUnset）
@@ -426,6 +433,7 @@ ge.userAdd({ total_revenue: 50 });
 ge.userUnset("userPropertyKey");
 ```
 
+> [!Tip]
 > userUnset: 的传入值为被清空属性的 Key 值。
 
 ### 4.5 删除用户（userDel）
@@ -489,10 +497,11 @@ var config = {
 - `pageShare`：自动采集小程序进行转发分享
 
 不同平台由于运行环境以及结构原因，支持不同的自动采集事件，支持列表如下：
-| 平台 | appLaunch | appShow | appHide|pageShow|pageShare|
-| ------------ | ---- | ------------------------ |---|---|---|
-| 小程序 | ✅ | ✅ |✅ |✅ |✅ |
-| 小游戏 | | ✅ |✅ | | |
+
+| 平台   | appLaunch | appShow | appHide | pageShow | pageShare |
+| ------ | --------- | ------- | ------- | -------- | --------- |
+| 小程序 | ✅        | ✅      | ✅      | ✅       | ✅        |
+| 小游戏 |           | ✅      | ✅      |          |           |
 
 ### 5.2 自动采集事件详解
 
