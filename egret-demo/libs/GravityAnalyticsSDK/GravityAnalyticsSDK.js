@@ -82,7 +82,7 @@ function _toPropertyKey(arg) {
 }
 
 var Config = {
-  LIB_VERSION: "3.3.5",
+  LIB_VERSION: "3.3.6",
   LIB_NAME: "MG",
   LIB_STACK: "egret",
   BASE_URL: "https://turbo.api.plutus-cat.com/event_center/api/v1"
@@ -961,7 +961,7 @@ var AutoTrackBridge = /*#__PURE__*/function () {
         if (options && options.path) {
           // prop["$url_path"] = this._getPath(options.path);
           prop["$url_query"] = _.setQuery(options.query);
-          prop["$scene"] = options.scene;
+          prop["$scene"] = String(options.scene);
         }
         this.taInstance._internalTrack("$MPLaunch", prop);
       }
@@ -978,7 +978,7 @@ var AutoTrackBridge = /*#__PURE__*/function () {
         if (options && options.path) {
           prop["$url_path"] = this._getPath(options.path);
           prop["$url_query"] = _.setQuery(options.query);
-          prop["$scene"] = options.scene;
+          prop["$scene"] = String(options.scene);
         }
         _.extend(prop, this.config.properties);
         if (_.isFunction(this.config.callback)) {
@@ -1155,7 +1155,7 @@ var AutoTrackBridge$1 = /*#__PURE__*/function () {
           _.extend(properties, this.config.callback("appShow"));
         }
         this.taInstance._internalTrack("$MPShow", _objectSpread2(_objectSpread2({}, properties), {}, {
-          $scene: options.scene,
+          $scene: String(options.scene),
           $url_query: _.setQuery(PlatformAPI.getAppOptions().query)
         }));
       }
@@ -2906,7 +2906,7 @@ var GravityEngineAPI = /*#__PURE__*/function () {
       if (getPlatFormName() === "GravityEngine_wechat_game" && config.autoTrack.appLaunch) {
         this.track("$MPLaunch", {
           $url_query: this.setQuery(this.getQuery()),
-          $scene: PlatformAPI.getAppOptions().scene
+          $scene: String(PlatformAPI.getAppOptions().scene)
         });
       }
       if (!config.isChildInstance && config.autoTrack) {
