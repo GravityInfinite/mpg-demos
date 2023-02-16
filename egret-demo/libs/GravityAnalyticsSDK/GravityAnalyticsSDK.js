@@ -82,7 +82,7 @@ function _toPropertyKey(arg) {
 }
 
 var Config = {
-  LIB_VERSION: "3.3.6",
+  LIB_VERSION: "3.3.7",
   LIB_NAME: "MG",
   LIB_STACK: "egret",
   BASE_URL: "https://turbo.api.plutus-cat.com/event_center/api/v1"
@@ -3433,6 +3433,45 @@ var GravityEngineAPI = /*#__PURE__*/function () {
       this.track("$MPRegister", {});
     }
   }, {
+    key: "payEvent",
+    value: function payEvent($pay_amount, $pay_type, $order_id, $pay_reason, $pay_method, $is_first_pay) {
+      if (typeof $pay_amount !== "number") {
+        throw new Error("pay_amount must be a number");
+      } else if (typeof $pay_type !== "string") {
+        throw new Error("pay_type must be a string");
+      } else if (typeof $order_id !== "string") {
+        throw new Error("order_id must be a string");
+      } else if (typeof $pay_reason !== "string") {
+        throw new Error("pay_reason must be a string");
+      } else if (typeof $pay_method !== "string") {
+        throw new Error("pay_method must be a string");
+      } else if (typeof $is_first_pay !== "boolean") {
+        throw new Error("is_first_pay must be a boolean");
+      }
+      this.track("$PayEvent", {
+        $pay_amount: $pay_amount,
+        $pay_type: $pay_type,
+        $order_id: $order_id,
+        $pay_reason: $pay_reason,
+        $pay_method: $pay_method,
+        $is_first_pay: $is_first_pay
+      });
+    }
+  }, {
+    key: "adShowEvent",
+    value: function adShowEvent($ad_type, $ad_unit_id) {
+      if (typeof $ad_type !== "string") {
+        throw new Error("ad_type must be a string");
+      } else if (typeof $ad_unit_id !== "string") {
+        throw new Error("ad_unit_id must be a string");
+      }
+      this.track("$AdShow", {
+        $ad_type: $ad_type,
+        $ad_unit_id: $ad_unit_id,
+        $adn_type: "wechat"
+      });
+    }
+  }, {
     key: "getQuery",
     value: function getQuery() {
       var query = PlatformAPI.getAppOptions().query || {};
@@ -3488,24 +3527,28 @@ var GravityEngineAPI = /*#__PURE__*/function () {
       });
     }
   }, {
+    key: "_errorPromise",
+    value: function _errorPromise(msg) {
+      return Promise.reject(new Error(msg));
+    }
+  }, {
     key: "register",
     value: function register() {
       var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var warn = "";
       if (!this._state.initComplete) {
-        console.warn("register must be called after init");
-        return;
+        warn = "register must be called after init";
+      } else if (!(e !== null && e !== void 0 && e.name)) {
+        warn = "name must be required";
+      } else if (!(e !== null && e !== void 0 && e.channel)) {
+        warn = "channel must be required";
+      } else if (!(e !== null && e !== void 0 && e.version) && (e === null || e === void 0 ? void 0 : e.version) !== 0) {
+        warn = "version must be required";
+      } else if (!_.isNumber(e === null || e === void 0 ? void 0 : e.version) || typeof (e === null || e === void 0 ? void 0 : e.version) !== "number") {
+        warn = "version must be type: Number";
       }
-      if (!(e !== null && e !== void 0 && e.name)) {
-        throw new Error("name must be required");
-      }
-      if (!(e !== null && e !== void 0 && e.channel)) {
-        throw new Error("channel must be required");
-      }
-      if (!(e !== null && e !== void 0 && e.version) && (e === null || e === void 0 ? void 0 : e.version) !== 0) {
-        throw new Error("version must be required");
-      }
-      if (!_.isNumber(e === null || e === void 0 ? void 0 : e.version) || typeof (e === null || e === void 0 ? void 0 : e.version) !== "number") {
-        throw new Error("version must be type: Number");
+      if (warn) {
+        return this._errorPromise(warn);
       }
       var platform = this.getPlatForm();
       var data = {
@@ -3564,9 +3607,9 @@ var GravityEngineAPI = /*#__PURE__*/function () {
     key: "handleEvent",
     value: function handleEvent() {
       var e = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var warn = "";
       if (!this._state.initComplete) {
-        console.warn("handleEvent must be called after init");
-        return;
+        warn = "handleEvent must be called after init";
       }
       var data = {
         event_type: e.event_type
@@ -3576,7 +3619,10 @@ var GravityEngineAPI = /*#__PURE__*/function () {
       }
       data.use_client_time = (e === null || e === void 0 ? void 0 : e.use_client_time) || false;
       if (data.use_client_time && !(e !== null && e !== void 0 && e.timestamp)) {
-        throw new Error("timestamp must be required");
+        warn = "timestamp must be required";
+      }
+      if (warn) {
+        return this._errorPromise(warn);
       }
       if (e !== null && e !== void 0 && e.timestamp) {
         data.timestamp = e.timestamp;
@@ -3591,9 +3637,12 @@ var GravityEngineAPI = /*#__PURE__*/function () {
   }, {
     key: "queryUser",
     value: function queryUser() {
+      var warn = "";
       if (!this._state.initComplete) {
-        console.warn("queryUser must be called after init");
-        return;
+        warn = "queryUser must be called after init";
+      }
+      if (warn) {
+        return this._errorPromise(warn);
       }
       var data = {
         user_list: [this.appId]
@@ -4117,6 +4166,22 @@ var GravityEngineAPIForNative = /*#__PURE__*/function () {
         return;
       }
       return this.geJs.logoutEvent();
+    }
+  }, {
+    key: "payEvent",
+    value: function payEvent($pay_amount, $pay_type, $order_id, $pay_reason, $pay_method, $is_first_pay) {
+      if (this._isNativePlatform()) {
+        return;
+      }
+      return this.geJs.payEvent($pay_amount, $pay_type, $order_id, $pay_reason, $pay_method, $is_first_pay);
+    }
+  }, {
+    key: "adShowEvent",
+    value: function adShowEvent($ad_type, $ad_unit_id) {
+      if (this._isNativePlatform()) {
+        return;
+      }
+      return this.geJs.adShowEvent($ad_type, $ad_unit_id);
     }
   }, {
     key: "userSet",

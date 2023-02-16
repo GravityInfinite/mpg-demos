@@ -27,35 +27,38 @@
 
 开始接入工作之前，您需要先[下载 SDK](https://github.com/GravityInfinite/mpg-demos/releases)，然后再根据您的技术栈选择不同的接入方式。
 
-### 1.1 微信小游戏原生集成
+<!-- tabs:start -->
+
+#### **微信小游戏原生**
 
 下载 `gravityengine.mg.wx.min.js`，放入与 `app.js` 相同的目录中，在 `app.js` 中添加以下代码初始化 SDK:
 
 ```js
-var GE = require("./gravityengine.mg.wx.min.js");
-var config = {
-  accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
-  clientId: "your_client_id", // 项目的 APP ID
+import GravityEngine from "./js/utils/gravityengine.mg.wx.min";
+const config = {
+  accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi", // 项目通行证，在：网站后台-->管理中心-->应用列表中找到Access Token列 复制（首次使用可能需要先新增应用）
+  clientId: "your_client_id", // 用户唯一标识，如微信小程序的openid
   autoTrack: {
     appLaunch: true, // 自动采集 $MPLaunch
     appShow: true, // 自动采集 $MPShow
     appHide: true, // 自动采集 $MPHide
   },
   name: "ge", // 全局变量名称, 默认为 gravityengine
+  enableLog: false, // 是否开启日志打印
 };
-new GE(config);
+new GravityEngine(config);
 ge.init();
 ```
 
-### 1.2 微信小程序原生集成
+#### **微信小程序原生**
 
 将 `gravityengine.wx.min.js` 导入工程，并添加如下代码初始化 SDK：
 
 ```js
-var GE = require("./utils/gravityengine.wx.min.js");
-var config = {
-  accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
-  clientId: "your_client_id", // 项目的 APP ID
+import GravityEngine from "./utils/gravityengine.wx.min.js";
+const config = {
+  accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi", // 项目通行证，在：网站后台-->管理中心-->应用列表中找到Access Token列 复制（首次使用可能需要先新增应用）
+  clientId: "your_client_id", // 用户唯一标识，如微信小程序的openid
   autoTrack: {
     appLaunch: true, // 自动采集 $MPLaunch
     appShow: true, // 自动采集 $MPShow
@@ -64,27 +67,31 @@ var config = {
     pageShare: true, // 自动采集 $MPShare
   },
   name: "ge", // 全局变量名称, 默认为 gravityengine
+  enableLog: false, // 是否开启日志打印
 };
 // var app = getApp();
 // app.ge = new GE(config);
-var ge = new GE(config);
+const ge = new GravityEngine(config);
 ge.init();
 ```
 
-### 1.3 CocosCreator 集成
+#### **CocosCreator **
 
-#### 1.3.1 导入 SDK：
+导入 SDK：
 
-TypeScript 项目：
+<!-- tabs:start -->
+
+##### **TypeScript 项目：**
 
 - 将声明文件 `GravityAnalyticsSDK.d.ts` 放入项目根目录下 `assets` 下级的 `libs` 目录，如果 `libs` 不存在，新建 `libs` 目录
 - 将 SDK 文件 `gravityengine.mg.cocoscreator.min.js` 放入 `assets/Script` 目录中
 
-JavaScript 项目：
+##### **JavaScript 项目：**
 
 - 将 SDK 文件 `gravityengine.mg.cocoscreator.min.js` 放入 `assets/Script` 目录中
+<!-- tabs:end -->
 
-#### 1.3.2 配置初始化参数
+配置初始化参数：
 
 ```javascript
 const config = {
@@ -97,17 +104,18 @@ const config = {
   },
   name: "ge", // 全局变量名称
   enableLog: false, // 是否开启日志打印
-  enablePersistence: true, // 是否缓存
 };
 const ge = new GravityAnalyticsAPI(config);
 ge.init();
 ```
 
-### 1.4 Laya 集成
+#### **Laya **
 
-#### 1.4.1 导入 SDK
+导入 SDK：
 
-TypeScript 项目：
+<!-- tabs:start -->
+
+##### **TypeScript 项目**
 
 - 将声明文件 `GravityAnalyticsSDK.d.ts` 放入 `libs`目录；
 - 将 SDK 文件 `gravityengine.mg.layats.min.js` 放入 bin/js 目录中
@@ -119,7 +127,7 @@ loadLib("js/gravityengine.mg.layats.min.js");
 loadLib("js/bundle.js");
 ```
 
-JavaScript 项目：
+##### **JavaScript 项目**
 
 - 将 `gravityengine.mg.laya.min.js` 导入工程：
 
@@ -127,7 +135,7 @@ JavaScript 项目：
   import GravityAnalyticsAPI from "gravityengine.mg.laya.min.js";
   ```
 
-#### 1.4.2 配置初始化参数
+  <!-- tabs:end -->
 
 引入 SDK 后，即可进行 SDK 初始化参数配置：
 
@@ -144,15 +152,14 @@ const config = {
   },
   name: "ge", // 全局变量名称
   enableLog: false, // 是否开启日志打印
-  enablePersistence: true, // 是否缓存
 };
 const ge = new GravityAnalyticsAPI(config);
 ge.init();
 ```
 
-### 1.5 Egret 集成
+#### **Egret **
 
-#### 1.5.1 导入 SDK
+导入 SDK：
 
 `GravityAnalyticsSDK` 目录放入您项目的 `libs` 目录下。然后在您项目的配置文件 `egretProperties.json` 中引入 SDK:
 
@@ -162,8 +169,6 @@ ge.init();
   "path": "./libs/GravityAnalyticsSDK"
 }
 ```
-
-#### 1.5.2 配置初始化参数
 
 集成 SDK 后，您可以在代码中直接使用 `GravityAnalyticsAPI`:
 
@@ -178,24 +183,21 @@ const config = {
   },
   name: "ge", // 全局变量名称，可使用getApp().ge获取ge
   enableLog: false, // 是否开启日志打印
-  enablePersistence: true, // 是否缓存
 };
-const ge = new GravityAnalyticsAPI(config);
+const ge = new GravityEngine(config);
 ge.init();
 ```
 
-### 1.6 快应用集成
+#### **快应用**
 
-#### 1.6.1 导入 SDK
+导入 SDK:
 
-- 将 `gravityengine.quick.min.js` 文件导入快应用项目中；
+- 将 `gravityengine.quick.js` 文件导入快应用项目中；
 - 在 `app.ux` 文件中引入 SDK：
 
 ```javascript
-import GravityEngine from "./helper/gravityengine.quick.min";
+import ge from "./helper/gravityengine.quick";
 ```
-
-#### 1.6.2 配置初始化参数
 
 引入 SDK 后，即可进行 SDK 初始化参数配置：
 
@@ -205,23 +207,24 @@ const config = {
   clientId: "your_client_id", // 用户唯一标识，如微信小程序的openid
   name: "ge", // 全局变量名称，可使用getApp().ge获取ge
   enableLog: false, // 是否开启日志打印
-  enablePersistence: true, // 是否缓存
 };
 const ge = new GravityEngine(config);
 ge.init();
 ```
 
+<!-- tabs:end -->
+
 其他可能会用到的配置有：
 
 ```javascript
-enableLog: true, // 是否打开日志打印
+debugMode: "debug", // 是否开启测试模式，开启测试模式后，可以在 网站后台--管理中心--元数据--事件流中查看实时数据上报结果
 sendTimeout: 3000, // 网络请求超时时间，单位毫秒，默认值 3000 ms
 maxRetries: 3, // 网络请求失败时的重试次数，1 表示不重试。默认值是 3
 enablePersistence: true, // 是否使用本地缓存，主实例默认为 true，子实例默认为 false
 asyncPersistence: false, // 是否使用异步存储，默认为 false
 ```
 
-### 1.7 配置项目合法域名
+### 配置项目合法域名
 
 将 https://turbo.api.plutus-cat.com 配置到微信后台 request 合法域名列表中。
 
@@ -334,7 +337,7 @@ ge.track(
 
 引力引擎后台内置了一些预置事件，您可以通过以下方法分别上报：注册、登录、登出事件。
 
-### 3.1 用户注册事件上报
+### 3.1 注册事件上报
 
 当用户注册成功时，需要调用 `registerEvent` 方法记录用户注册事件
 
@@ -342,7 +345,7 @@ ge.track(
 ge.registerEvent();
 ```
 
-### 3.2 用户登录事件上报
+### 3.2 登录事件上报
 
 当用户登录成功时，需要调用 `loginEvent` 方法记录用户登录事件
 
@@ -350,7 +353,7 @@ ge.registerEvent();
 ge.loginEvent();
 ```
 
-### 3.3 用户注销登录事件上报
+### 3.3 注销登录事件上报
 
 当用户注销登录时，需要调用 `logoutEvent` 方法记录用户登出事件
 
@@ -358,7 +361,23 @@ ge.loginEvent();
 ge.logoutEvent();
 ```
 
-### 3.4 设置事件上报时间
+### 3.4 付费事件上报
+
+当用户发生付费行为时，需要调用 `payEvent` 方法记录用户付费事件，此事件非常重要，会影响买量和 ROI 统计，请务必重点测试
+
+```javascript
+ge.payEvent(300, "CNY", "your_order_id", "月卡", "支付宝", true);
+```
+
+### 3.5 广告观看事件上报
+
+在用户观看完广告之后调用 `adShowEvent` 方法记录用户广告观看事件
+
+```javascript
+ge.adShowEvent("reward", "your_ad_unit_id");
+```
+
+### 3.6 设置事件上报时间
 
 事件触发的时间默认取本机时间，但在一些情况下，可能需要手动设置事件的时间，可以使用以下方法进行调用：
 
@@ -372,7 +391,7 @@ ge.track("event", {}, new Date());
 
 - 第三个参数为事件触发时间，必须是 Date 类型，将会替换事件触发的时间，如果不传该参数，则事件触发时间默认选取用户的本机时间
 
-### 3.5 记录事件时长
+### 3.7 记录事件时长
 
 您可以调用 `timeEvent`来开始计时，配置您想要计时的事件名称，当您上传该事件时，将会自动在您的事件属性中加入 `$event_duration`这一属性来表示记录的时长，单位为秒。
 
