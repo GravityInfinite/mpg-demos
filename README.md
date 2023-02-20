@@ -31,7 +31,7 @@
 
 #### **微信小游戏原生**
 
-下载 `gravityengine.mg.wx.min.js`，放入与 `app.js` 相同的目录中，在 `app.js` 中添加以下代码初始化 SDK:
+将ge_mg_sdk_version.zip中的 `gravityengine.mg.wx.min.js`导入工程，并添加如下代码初始化 SDK：
 
 ```js
 import GravityEngine from "./js/utils/gravityengine.mg.wx.min";
@@ -52,7 +52,7 @@ ge.init();
 
 #### **微信小程序原生**
 
-将 `gravityengine.wx.min.js` 导入工程，并添加如下代码初始化 SDK：
+将ge_mp_sdk_version.zip中的 `gravityengine.wx.min.js` 导入工程，并添加如下代码初始化 SDK：
 
 ```js
 import GravityEngine from "./utils/gravityengine.wx.min.js";
@@ -77,12 +77,11 @@ ge.init();
 
 #### **CocosCreator **
 
-导入 SDK：
+从ge_cocoscreator_sdk_version.zip中导入 SDK：
 
 <!-- tabs:start -->
 
 ##### **TypeScript 项目：**
-
 - 将声明文件 `GravityAnalyticsSDK.d.ts` 放入项目根目录下 `assets` 下级的 `libs` 目录，如果 `libs` 不存在，新建 `libs` 目录
 - 将 SDK 文件 `gravityengine.mg.cocoscreator.min.js` 放入 `assets/Script` 目录中
 
@@ -111,7 +110,7 @@ ge.init();
 
 #### **Laya **
 
-导入 SDK：
+从ge_laya_sdk_version.zip中导入 SDK：
 
 <!-- tabs:start -->
 
@@ -159,9 +158,8 @@ ge.init();
 
 #### **Egret **
 
-导入 SDK：
 
-`GravityAnalyticsSDK` 目录放入您项目的 `libs` 目录下。然后在您项目的配置文件 `egretProperties.json` 中引入 SDK:
+ 在项目的`libs` 目录下创建`GravityAnalyticsSDK`目录，将ge_egret_sdk_version.zip中的`GravityAnalyticsSDK.d.ts`和`GravityAnalyticsSDK.js`两个文件放入其中，然后在您项目的配置文件 `egretProperties.json` 中引入 SDK:
 
 ```json
 {
@@ -192,8 +190,7 @@ ge.init();
 
 导入 SDK:
 
-- 将 `gravityengine.quick.js` 文件导入快应用项目中；
-- 在 `app.ux` 文件中引入 SDK：
+- 将ge_mp_sdk_version.zip中`gravityengine.quick.js` 文件导入快应用项目中
 
 ```javascript
 import ge from "./helper/gravityengine.quick";
@@ -236,19 +233,17 @@ asyncPersistence: false, // 是否使用异步存储，默认为 false
 
 ```javascript
 /**
- * @param {string} name         用户名（必填）
- * @param {string} channel      用户注册渠道（必填）
- * @param {number} version      用户注册的程序版本（必填）
- * @param {string} click_id     用户点击广告id 微信小程序选填
- * @param {string} wx_openid    微信open id (微信小程序必填)
- * @param {string} wx_unionid   微信union id（微信小程序选填）
+ * @param {string} name         用户名，可以理解成用户在业务中的昵称，如果没有，可以填用户唯一ID（必填）
+ * @param {string} channel      用户注册渠道，如果不知道填什么，则填：base_channel字符串即可（必填）
+ * @param {number} version      用户注册的程序发布更新的版本号（必填）
+ * @param {string} wx_openid    微信open id (微信小程序/小游戏必填)
+ * @param {string} wx_unionid   微信union id（微信小程序/小游戏选填）
  */
 
 ge.register({
   name: "your_name",
   channel: "your_channel",
   version: 123,
-  click_id: "your_click_id",
   wx_openid: "your_wx_openid",
   wx_unionid: "your_wx_unionid",
 });
@@ -468,7 +463,7 @@ ge.userDel();
 您可以调用 `userAppend` 对 Array (List) 类型的用户数据追加元素。
 
 ```js
-ge.userAppend({ Elements: [("a": 1), ("b": 2)] });
+ge.userAppend({ Movies: ["Interstellar", "The Negro Motorist Green Book"] });
 ```
 
 ### 4.7 为 Array 类型的用户属性去重追加元素 (userUniqAppend)
@@ -476,7 +471,9 @@ ge.userAppend({ Elements: [("a": 1), ("b": 2)] });
 `userUniqAppend` 用来对 Array (List) 类型的用户数据**去重**追加元素。
 
 ```js
-ge.userUniqAppend({ Elements: [("a": 1), ("b": 2)] });
+ge.userUniqAppend({
+  Movies: ["Interstellar", "The Negro Motorist Green Book"],
+});
 ```
 
 ## 五、自动采集事件
