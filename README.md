@@ -455,7 +455,7 @@ ge.userUnset("userPropertyKey");
 > [!Tip]
 > userUnset: 的传入值为被清空属性的 Key 值。
 
-### 4.5 删除用户（userDel）
+### 4.5 清空用户属性（userDel）
 
 如果您要删除某个用户，可以调用 `userDel`将这名用户删除，您将无法再查询该名用户的用户属性，但该用户产生的事件仍然可以被查询到
 
