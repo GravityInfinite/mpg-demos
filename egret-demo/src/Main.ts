@@ -39,8 +39,8 @@ class Main extends eui.UILayer {
         appHide: true, // 自动采集 $MPHide
       },
       name: "ge", // 全局变量名称，可使用getApp().ge获取ge
-      enableLog: false, // 是否开启日志打印
       enablePersistence: true, // 是否缓存
+      debugMode: "debug", // debug or none
     };
     ge = new GravityAnalyticsAPI(config);
     ge.init();

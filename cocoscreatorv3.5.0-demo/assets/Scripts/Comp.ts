@@ -10,6 +10,8 @@ const config = {
     appHide: true, // 自动采集 $MPHide
   },
   name: "gravityEngine", // 全局变量名称
+  enablePersistence: true, // 是否缓存
+  debugMode: "debug", // debug or none
 };
 let ge;
 

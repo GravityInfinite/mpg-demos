@@ -44,7 +44,8 @@ const config = {
     appHide: true, // 自动采集 $MPHide
   },
   name: "ge", // 全局变量名称, 默认为 gravityengine
-  enableLog: false, // 是否开启日志打印
+  enablePersistence: true, // 是否缓存
+  debugMode: "debug", // debug or none
 };
 new GravityEngine(config);
 ge.init();
@@ -67,7 +68,8 @@ const config = {
     pageShare: true, // 自动采集 $MPShare
   },
   name: "ge", // 全局变量名称, 默认为 gravityengine
-  enableLog: false, // 是否开启日志打印
+  enablePersistence: true, // 是否缓存
+  debugMode: "debug", // debug or none
 };
 // var app = getApp();
 // app.ge = new GE(config);
@@ -103,7 +105,8 @@ const config = {
     appHide: true, // 自动采集 $MPHide
   },
   name: "ge", // 全局变量名称
-  enableLog: false, // 是否开启日志打印
+  enablePersistence: true, // 是否缓存
+  debugMode: "debug", // debug or none
 };
 const ge = new GravityAnalyticsAPI(config);
 ge.init();
@@ -151,7 +154,8 @@ const config = {
     pageShare: true, // 自动采集 $MPShare
   },
   name: "ge", // 全局变量名称
-  enableLog: false, // 是否开启日志打印
+  enablePersistence: true, // 是否缓存
+  debugMode: "debug", // debug or none
 };
 const ge = new GravityAnalyticsAPI(config);
 ge.init();
@@ -182,7 +186,8 @@ const config = {
     appHide: true, // 自动采集 $MPHide
   },
   name: "ge", // 全局变量名称，可使用getApp().ge获取ge
-  enableLog: false, // 是否开启日志打印
+  enablePersistence: true, // 是否缓存
+  debugMode: "debug", // debug or none
 };
 const ge = new GravityEngine(config);
 ge.init();
@@ -206,7 +211,8 @@ const config = {
   accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi", // 项目通行证，在：网站后台-->管理中心-->应用列表中找到Access Token列 复制（首次使用可能需要先新增应用）
   clientId: "your_client_id", // 用户唯一标识，如微信小程序的openid
   name: "ge", // 全局变量名称，可使用getApp().ge获取ge
-  enableLog: false, // 是否开启日志打印
+  enablePersistence: true, // 是否缓存
+  debugMode: "debug", // debug or none
 };
 const ge = new GravityEngine(config);
 ge.init();

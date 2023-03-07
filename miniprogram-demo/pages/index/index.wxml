@@ -10,6 +10,8 @@
     <button type="primary" bindtap="handleUserSetOnce">userSetOnce</button>
     <button type="primary" bindtap="handleUserAdd">userAdd</button>
     <button type="primary" bindtap="handleUserDel">userDel</button>
+    <button type="primary" bindtap="handleUserNumberMax">userNumberMax</button>
+    <button type="primary" bindtap="handleUserNumberMin">userNumberMin</button>
     <button type="primary" bindtap="handleUserAppend">userAppend</button>
     <button type="primary" bindtap="handleUserUnset">userUnset</button>
   </view>
