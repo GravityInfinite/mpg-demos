@@ -19,6 +19,8 @@ export default class Demo extends Laya.Scene {
         appHide: true, // 自动采集 $MPHide
       },
       name: "gravityEngine", // 全局变量名称
+      enablePersistence: true, // 是否缓存
+      debugMode: "debug", // debug or none
     };
     ge = new GravityAnalyticsAPI(config);
     ge.init();

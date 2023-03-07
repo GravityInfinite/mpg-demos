@@ -63,6 +63,20 @@ Page({
     ge.userDel();
   },
 
+  // 比较数值大小，保存较大的，如果没有这个key，则新增key，value取本次的值
+  handleUserNumberMax() {
+    ge.userNumberMax({
+      age1: 10,
+    })
+  },
+
+  // 比较数值大小，保存较小的，如果没有这个key，则新增key，value取本次的值
+  handleUserNumberMin() {
+    ge.userNumberMin({
+      age2: 20,
+    })
+  },
+
   // 向某个用户的某个数组类型的Profile添加一个或者多个值,默认不去重
   handleUserAppend() {
     ge.userAppend({

@@ -20,6 +20,8 @@ export default {
       accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
       clientId: "your_client_id", // 项目的 APP ID
       name: 'ge', // 全局变量名称
+      enablePersistence: true, // 是否缓存
+      debugMode: "debug", // debug or none
     };
     new GravityEngine(config);
     ge.init();

@@ -1,5 +1,4 @@
 // app.js
-// import turbo from "./utils/turbo.min.js"
 import GravityEngine from "./utils/gravityengine.wx.min.js";
 
 const config = {
@@ -13,19 +12,13 @@ const config = {
     pageShare: true, // 自动采集 $MPShare
   },
   name: "ge", // 全局变量名称，可使用getApp().ge获取ge
-  enableLog: false, // 是否开启日志打印
   enablePersistence: true, // 是否缓存
-  debugMode: "none", // debug or none
+  debugMode: "debug", // debug or none
 };
 const ge = new GravityEngine(config);
 ge.init();
 App({
-  onLaunch() {
-    // turbo.setPara({
-    //   show_log: false
-    // })
-    // turbo.init('gZGljPsq7I4wc3BMvkAUsevQznx1jahi', "your_client_id");
-  },
+  onLaunch() {},
   globalData: {
     ge,
   },
