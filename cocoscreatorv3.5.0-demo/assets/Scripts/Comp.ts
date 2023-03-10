@@ -30,7 +30,6 @@ export class Demo extends Component {
       name: "your_name",
       channel: "your_channel",
       version: 123,
-      click_id: "your_click_id",
       wx_openid: "your_wx_openid",
       wx_unionid: "your_wx_unionid",
     }).then((res) => {
