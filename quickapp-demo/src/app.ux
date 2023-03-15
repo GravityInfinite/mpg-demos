@@ -18,7 +18,7 @@ export default {
   async onCreate() {
     const config = {
       accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
-      clientId: "your_client_id", // 项目的 APP ID
+      clientId: "your_client_id", // 用户唯一标识，如微信小程序的openid
       name: 'ge', // 全局变量名称
       enablePersistence: true, // 是否缓存
       debugMode: "debug", // debug or none

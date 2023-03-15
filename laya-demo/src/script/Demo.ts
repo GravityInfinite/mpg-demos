@@ -12,7 +12,7 @@ export default class Demo extends Laya.Scene {
   onEnable(): void {
     const config = {
       accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
-      clientId: "your_client_id", // 项目的 APP ID
+      clientId: "your_client_id", // 用户唯一标识，如微信小程序的openid
       autoTrack: {
         appLaunch: true, // 自动采集 $MPLaunch
         appShow: true, // 自动采集 $MPShow
@@ -46,7 +46,6 @@ export default class Demo extends Laya.Scene {
   handleRegister() {
     ge.register({
       name: "your_name",
-      channel: "your_channel",
       version: 123,
       wx_openid: "your_wx_openid",
       wx_unionid: "your_wx_unionid",
