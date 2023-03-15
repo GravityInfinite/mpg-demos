@@ -6,7 +6,7 @@ import GravityEngine from "./js/utils/gravityengine.mg.wx.min";
 
 const config = {
   accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
-  clientId: "your_client_id", // 项目的 APP ID
+  clientId: "your_client_id", // 用户唯一标识，如微信小程序的openid
   autoTrack: {
     appLaunch: true, // 自动采集 $MPLaunch
     appShow: true, // 自动采集 $MPShow
