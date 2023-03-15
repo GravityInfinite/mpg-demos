@@ -9,7 +9,6 @@ Page({
     ge
       .register({
         name: "your_name",
-        channel: "your_channel",
         version: 123,
         wx_openid: "your_wx_openid",
         wx_unionid: "your_wx_unionid",
