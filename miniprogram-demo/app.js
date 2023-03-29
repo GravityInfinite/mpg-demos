@@ -13,7 +13,7 @@ const config = {
   },
   name: "ge", // 全局变量名称，可使用getApp().ge获取ge
   enablePersistence: true, // 是否缓存
-  debugMode: "debug", // debug or none
+  debugMode: "none", // debug or none
 };
 const ge = new GravityEngine(config);
 ge.init();

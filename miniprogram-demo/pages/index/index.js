@@ -12,6 +12,8 @@ Page({
         version: 123,
         wx_openid: "your_wx_openid",
         wx_unionid: "your_wx_unionid",
+      }).then((res) => {
+        console.log(res)
       })
   },
   handleEvent() {
@@ -96,7 +98,7 @@ Page({
   },
 
   handleRegisterEvent() {
-    ge.registerEvent();
+    ge.registerEvent()
   },
   handleLoginEvent() {
     ge.loginEvent();
