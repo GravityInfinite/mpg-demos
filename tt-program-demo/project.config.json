@@ -1,0 +1,13 @@
+{
+    "setting": {
+        "urlCheck": true,
+        "es6": true,
+        "postcss": true,
+        "minified": true,
+        "newFeature": true,
+        "autoCompile": true
+    },
+    "appid": "testAppId",
+    "projectname": "test",
+    "douyinProjectType": "native"
+}

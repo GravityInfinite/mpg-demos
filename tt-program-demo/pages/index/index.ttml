@@ -1,0 +1,28 @@
+<view>
+    <view class="box">
+        <button bindtap="handleRegister">注册</button>
+        <button bindtap="handleEvent">埋点事件上报</button>
+        <button bindtap="handleQueryUser">查询用户信息</button>
+    </view>
+    <view class="box">
+        <button bindtap="handleUserSet">userSet</button>
+        <button bindtap="handleUserSetOnce">userSetOnce</button>
+        <button bindtap="handleUserAdd">userAdd</button>
+        <button bindtap="handleUserDel">userDel</button>
+        <button bindtap="handleUserNumberMax">userNumberMax</button>
+        <button bindtap="handleUserNumberMin">userNumberMin</button>
+        <button bindtap="handleUserAppend">userAppend</button>
+        <button bindtap="handleUserUnset">userUnset</button>
+    </view>
+    <view class="box">
+        <button bindtap="handleRegisterApp">registerApp</button>
+    </view>
+    <view class="box">
+        <button bindtap="handleRegisterEvent">registerEvent</button>
+        <button bindtap="handleLoginEvent">loginEvent</button>
+        <button bindtap="handleLogoutEvent">logoutEvent</button>
+    </view>
+    <view class="box">
+        <button bindtap="handleCustomTrack">customTrack</button>
+    </view>
+</view>
