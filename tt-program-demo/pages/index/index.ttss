@@ -1,0 +1,9 @@
+
+.box {
+  margin-bottom: 10px;
+  border-bottom: 3px solid #ccc;
+}
+
+button {
+  margin-bottom: 10px;
+}
