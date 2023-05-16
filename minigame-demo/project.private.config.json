@@ -9,6 +9,12 @@
           "name": "x",
           "query": "gdt_vid=11",
           "scene": null
+        },
+        {
+          "pathName": "",
+          "name": "aa",
+          "query": "a=1&aa=aa&turbo_promoted_object_id=sdfsdfjksdf8",
+          "scene": null
         }
       ]
     }

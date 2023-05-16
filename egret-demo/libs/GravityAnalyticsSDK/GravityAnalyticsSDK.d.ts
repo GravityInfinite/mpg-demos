@@ -16,7 +16,7 @@ declare class GravityAnalyticsAPI {
 	registerEvent(): void;
 	loginEvent(): void;
 	logoutEvent(): void;
-	payEvent(pay_amount:number, pay_type:string, order_id:string, pay_reason:string, pay_method:string, is_first_pay:boolean): void;
+	payEvent(pay_amount:number, pay_type:string, order_id:string, pay_reason:string, pay_method:string): void;
 	adShowEvent(ad_type:string, ad_unit_id:string): void;
 	register(data:any): any;
 	handleEvent(data:any): any;
