@@ -8,6 +8,10 @@
     "wechatgame": {
       "configID": "8f797d",
       "services": []
+    },
+    "bytedance-mini-game": {
+      "configID": "8f797d",
+      "services": []
     }
   },
   "builder-options": {

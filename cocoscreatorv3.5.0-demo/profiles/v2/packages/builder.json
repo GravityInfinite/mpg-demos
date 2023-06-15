@@ -4,20 +4,20 @@
     "level": 1
   },
   "common": {
-    "outputName": "wechatgame",
+    "outputName": "bytedance-mini-game",
     "mainBundleCompressionType": "merge_dep",
-    "platform": "wechatgame"
+    "platform": "bytedance-mini-game"
   },
   "BuildTaskManager": {
     "taskMap": {
-      "1675752371266": {
-        "id": "1675752371266",
+      "1686798387903": {
+        "id": "1686798387903",
         "progress": 1,
         "state": "success",
-        "message": "2023-2-7 14:46 Build success in 13494 ms!",
+        "message": "2023-6-15 11:06 Build success in 14139 ms!",
         "options": {
           "name": "NewProject",
-          "platform": "wechatgame",
+          "platform": "bytedance-mini-game",
           "buildPath": "project://build",
           "debug": false,
           "md5Cache": false,
@@ -38,23 +38,28 @@
               "inBundle": false
             }
           ],
-          "outputName": "wechatgame",
+          "outputName": "bytedance-mini-game",
           "packages": {
             "cocos-service": {
               "configID": "8f797d",
               "services": []
             },
-            "wechatgame": {
+            "bytedance-mini-game": {
               "startSceneAssetBundle": false,
               "orientation": "portrait",
-              "appid": "wx16e722502b86127d",
-              "separateEngine": false,
-              "wasm": "wasm",
-              "enabelWebGL2": "off"
+              "appid": "testappid",
+              "remoteServerAddress": "",
+              "physX": {
+                "use": "project",
+                "notPackPhysXLibs": false,
+                "multiThread": false,
+                "subThreadCount": 1,
+                "epsilon": 0.001
+              }
             }
           }
         },
-        "time": "2023-2-7 14:46",
+        "time": "2023-6-15 11:06",
         "dirty": false
       }
     }

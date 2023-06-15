@@ -152,51 +152,59 @@
     "missing": true
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\lib": {
-    "time": 1675752297264.196,
+    "time": 1686795797996.1292,
     "uuid": "b4c53e3f-70c1-49d9-840e-55769ad50665",
     "missing": false
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\scene.scene": {
-    "time": 1675736393748.4893,
+    "time": 1676001786719.89,
     "uuid": "452f8187-b06f-489a-bd75-647f6303dde2",
     "missing": false
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\Scripts": {
-    "time": 1675752297270.788,
+    "time": 1686797335117.7207,
     "uuid": "b3854e56-8aa7-47eb-8cbe-eb63df7878db",
     "missing": false
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\lib\\GravityAnalyticsSDK.d.ts": {
-    "time": 1675736393747.4917,
+    "time": 1686798340753.578,
     "uuid": "6bfdb63c-7dc6-4314-b726-9d581973730d",
     "missing": false
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\Scripts\\Comp.ts": {
-    "time": 1675752711613.7336,
+    "time": 1686795797991.832,
     "uuid": "5764ed7d-e14a-4998-a796-9ed063432877",
     "missing": false
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\Scripts\\gravityengine.mg.cocoscreator.js": {
     "time": 1675736393746.4885,
     "uuid": "04d5f737-1fef-4083-8cf6-54877777029e",
-    "missing": false
+    "missing": true
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\lib.meta": {
-    "time": 1675752300567.4846
+    "time": 1676001786719.89
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\Scripts.meta": {
-    "time": 1675736393743.4878
+    "time": 1676001786719.89
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\lib\\GravityAnalyticsSDK.d.ts.meta": {
-    "time": 1675752300567.4846
+    "time": 1676001786719.89
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\Scripts\\gravityengine.mg.cocoscreator.js.meta": {
     "time": 1675752300570.3066
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\Scripts\\Comp.ts.meta": {
-    "time": 1675736393745.4888
+    "time": 1676001786719.89
   },
   "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\scene.scene.meta": {
-    "time": 1675736393749.4885
+    "time": 1676001786719.89
+  },
+  "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\Scripts\\gravityengine.mg.cocoscreator.min.js": {
+    "time": 1686798340799.1423,
+    "uuid": "004954fe-7308-4be2-af68-d7c3fd079cbc",
+    "missing": false
+  },
+  "C:\\Users\\MrOrange\\Desktop\\turboSDK\\mpg-demos\\cocoscreatorv3.5.0-demo\\assets\\Scripts\\gravityengine.mg.cocoscreator.min.js.meta": {
+    "time": 1686797338680.621
   }
 }
