@@ -2,7 +2,7 @@
 import GravityEngine from "./utils/gravityengine.tt.min.js";
 
 const config = {
-  accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
+  accessToken: "z4gcI6n1O52DRibPXZfjvn8w3YVtLUqp",
   clientId: "your_client_id", // 用户唯一标识，如openid
   autoTrack: {
     appLaunch: true, // 自动采集 $MPLaunch
