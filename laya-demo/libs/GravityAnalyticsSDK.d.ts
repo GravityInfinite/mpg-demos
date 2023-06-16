@@ -23,7 +23,7 @@ declare class GravityAnalyticsAPI {
     pay_method: string
   ): void;
   adShowEvent(ad_type: string, ad_unit_id: string): void;
-  getBytedanceEcpmRecords(
+  reportBytedanceAdToGravity(
     open_id: string,
     mp_id: string,
     ad_unit_id: string
