@@ -3,7 +3,7 @@ const {
   ge
 } = getApp()
 Page({
-  onLoad(e) {},
+  onLoad(e) { },
   data: {},
   handleRegister() {
     ge
@@ -112,5 +112,10 @@ Page({
     ge.track("test", {
       $pay_type: "rmb",
     });
+  },
+
+  // 获取信息流投放用户粒度ecpm
+  handleReportBytedanceAdToGravity() {
+    ge.reportBytedanceAdToGravity('your_open_id', 'your_ad_unit_id');
   },
 });

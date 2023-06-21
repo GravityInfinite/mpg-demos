@@ -25,4 +25,7 @@
     <view class="box">
         <button bindtap="handleCustomTrack">customTrack</button>
     </view>
+    <view class="box">
+        <button bindtap="handleReportBytedanceAdToGravity">reportBytedanceAdToGravity</button>
+    </view>
 </view>
