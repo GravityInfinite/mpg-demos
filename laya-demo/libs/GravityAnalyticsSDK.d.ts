@@ -22,8 +22,13 @@ declare class GravityAnalyticsAPI {
     pay_reason: string,
     pay_method: string
   ): void;
-  adShowEvent(ad_type: string, ad_unit_id: string): void;
-  reportBytedanceAdToGravity(open_id: string, ad_unit_id: string): any;
+  adShowEvent(ad_type: string, ad_unit_id: string, otherProperties: any): void;
+  reportBytedanceAdToGravity(
+    open_id: string,
+    ad_unit_id: string,
+    otherProperties: any
+  ): any;
+  bindTAThirdPlatform(taAccountId: string, taDistinctId: string): void;
   register(data: any): any;
   handleEvent(data: any): any;
   queryUser(): any;
