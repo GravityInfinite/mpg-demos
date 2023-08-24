@@ -14,6 +14,8 @@ Page({
         wx_unionid: "your_wx_unionid",
       }).then((res) => {
         console.log(res)
+      }).catch((err) => {
+        console.log(err)
       })
   },
   handleEvent() {
@@ -30,7 +32,7 @@ Page({
       })
   },
   handleQueryUser() {
-    ge.queryUser().then((data) => {
+    ge.getUser().then((data) => {
       console.log(data);
     });
   },

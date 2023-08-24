@@ -31,7 +31,7 @@ declare class GravityAnalyticsAPI {
   bindTAThirdPlatform(taAccountId: string, taDistinctId: string): void;
   register(data: any): any;
   handleEvent(data: any): any;
-  queryUser(): any;
+  getUser(): any;
   registerApp(properties: any): void;
   userSet(properties: any): void;
   userSetOnce(properties: any): void;
