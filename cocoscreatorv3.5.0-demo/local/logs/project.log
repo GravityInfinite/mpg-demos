@@ -3681,8 +3681,8 @@ at async BuildTask.handle (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.
 2022-11-16T07:02:38.291Z - error: [Preview]ReferenceError: wx is not defined
     at http://localhost:7456/scripting/x/chunks/98/980bbdf1799694ae1b7c2db7faf9e0dafbb4625a.js:518:19
     at new Promise (<anonymous>)
-    at t.queryUser (http://localhost:7456/scripting/x/chunks/98/980bbdf1799694ae1b7c2db7faf9e0dafbb4625a.js:512:20)
-    at Demo.handleQueryUser (http://localhost:7456/scripting/x/chunks/b2/b2b9071e01a6d99de3c9e1fdb478e95b67f60022.js:80:31)
+    at t.getUser (http://localhost:7456/scripting/x/chunks/98/980bbdf1799694ae1b7c2db7faf9e0dafbb4625a.js:512:20)
+    at Demo.handleGetUser (http://localhost:7456/scripting/x/chunks/b2/b2b9071e01a6d99de3c9e1fdb478e95b67f60022.js:80:31)
     at EventHandler.emit (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:105075:19)
     at Function.emitEvents (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:105020:19)
     at Button._onTouchEnded (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:38410:35)
@@ -3693,8 +3693,8 @@ at async BuildTask.handle (C:\CocosDashboard_1.2.2\resources\.editors\Creator\3.
 2022-11-16T07:02:55.615Z - error: [Preview]ReferenceError: wx is not defined
     at http://localhost:7456/scripting/x/chunks/98/980bbdf1799694ae1b7c2db7faf9e0dafbb4625a.js:518:19
     at new Promise (<anonymous>)
-    at t.queryUser (http://localhost:7456/scripting/x/chunks/98/980bbdf1799694ae1b7c2db7faf9e0dafbb4625a.js:512:20)
-    at Demo.handleQueryUser (http://localhost:7456/scripting/x/chunks/b2/b2b9071e01a6d99de3c9e1fdb478e95b67f60022.js:80:31)
+    at t.getUser (http://localhost:7456/scripting/x/chunks/98/980bbdf1799694ae1b7c2db7faf9e0dafbb4625a.js:512:20)
+    at Demo.handleGetUser (http://localhost:7456/scripting/x/chunks/b2/b2b9071e01a6d99de3c9e1fdb478e95b67f60022.js:80:31)
     at EventHandler.emit (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:105075:19)
     at Function.emitEvents (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:105020:19)
     at Button._onTouchEnded (http://localhost:7456/scripting/engine/bin/.cache/dev/preview/bundled/index.js:38410:35)

@@ -180,7 +180,7 @@ class Main extends eui.UILayer {
     const eventList = [
       "handleRegister",
       "handleEvent",
-      "handleQueryUser",
+      "handleGetUser",
 
       "handleUserSet",
       "handleUserSetOnce",
@@ -264,8 +264,8 @@ class Main extends eui.UILayer {
       trace_id: "test",
     });
   }
-  handleQueryUser() {
-    ge.queryUser().then((data) => {
+  handleGetUser() {
+    ge.getUser().then((data) => {
       console.log(data);
     });
   }

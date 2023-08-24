@@ -46,7 +46,7 @@
             "x":15,
             "type":"Button",
             "searchKey":"Button,btn3,btn3",
-            "props":{"y":46,"x":310,"width":174,"var":"btn3","skin":"comp/button.png","name":"btn3","labelSize":20,"label":"handleQueryUser","height":47},
+            "props":{"y":46,"x":310,"width":174,"var":"btn3","skin":"comp/button.png","name":"btn3","labelSize":20,"label":"handleGetUser","height":47},
             "nodeParent":2,
             "label":"btn3",
             "isDirectory":false,

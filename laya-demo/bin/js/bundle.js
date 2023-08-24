@@ -24,7 +24,7 @@
           ge.init();
           this.scene.btn1.on(Event.CLICK, this, this.handleRegister);
           this.scene.btn2.on(Event.CLICK, this, this.handleEvent);
-          this.scene.btn3.on(Event.CLICK, this, this.handleQueryUser);
+          this.scene.btn3.on(Event.CLICK, this, this.handleGetUser);
           this.scene.btn4.on(Event.CLICK, this, this.handleUserSet);
           this.scene.btn5.on(Event.CLICK, this, this.handleUserSetOnce);
           this.scene.btn6.on(Event.CLICK, this, this.handleUserAdd);
@@ -57,8 +57,8 @@
               trace_id: "test",
           });
       }
-      handleQueryUser() {
-          ge.queryUser().then((data) => {
+      handleGetUser() {
+          ge.getUser().then((data) => {
               console.log(data);
           });
       }

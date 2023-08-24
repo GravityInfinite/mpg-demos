@@ -31,7 +31,7 @@ Page({
         trace_id: "test",
       })
   },
-  handleQueryUser() {
+  handleGetUser() {
     ge.getUser().then((data) => {
       console.log(data);
     });

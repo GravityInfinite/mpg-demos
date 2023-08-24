@@ -3,7 +3,7 @@
   <view class="box">
     <button type="primary" bindtap="handleRegister">注册</button>
     <button type="primary" bindtap="handleEvent">埋点事件上报</button>
-    <button type="primary" bindtap="handleQueryUser">查询用户信息</button>
+    <button type="primary" bindtap="handleGetUser">查询用户信息</button>
   </view>
   <view class="box">
     <button type="primary" bindtap="handleUserSet">userSet</button>

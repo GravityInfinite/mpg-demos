@@ -25,7 +25,7 @@ const buttonLocation = [];
 const eventList = [
   "handleRegister",
   "handleEvent",
-  "handleQueryUser",
+  "handleGetUser",
 
   "handleUserSet",
   "handleUserSetOnce",

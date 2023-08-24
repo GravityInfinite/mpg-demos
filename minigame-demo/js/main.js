@@ -21,8 +21,8 @@ export default class Main {
           trace_id: "test",
         })
     }
-    handleQueryUser() {
-      ge.queryUser().then((data) => {
+    handleGetUser() {
+      ge.getUser().then((data) => {
         console.log(data);
       });
     }

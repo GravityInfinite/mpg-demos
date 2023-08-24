@@ -241,7 +241,7 @@ var Main = (function (_super) {
         var eventList = [
             "handleRegister",
             "handleEvent",
-            "handleQueryUser",
+            "handleGetUser",
             "handleUserSet",
             "handleUserSetOnce",
             "handleUserAdd",
@@ -319,8 +319,8 @@ var Main = (function (_super) {
             trace_id: "test",
         });
     };
-    Main.prototype.handleQueryUser = function () {
-        ge.queryUser().then(function (data) {
+    Main.prototype.handleGetUser = function () {
+        ge.getUser().then(function (data) {
             console.log(data);
         });
     };

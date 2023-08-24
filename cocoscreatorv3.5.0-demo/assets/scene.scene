@@ -803,7 +803,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "handleQueryUser",
+    "_name": "handleGetUser",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -943,7 +943,7 @@
       "b": 0,
       "a": 255
     },
-    "_string": "handleQueryUser",
+    "_string": "handleGetUser",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 26,
@@ -1096,7 +1096,7 @@
     },
     "component": "",
     "_componentId": "5764e194UpJmKeWntBjQyh3",
-    "handler": "handleQueryUser",
+    "handler": "handleGetUser",
     "customEventData": ""
   },
   {

@@ -51,8 +51,8 @@ export class Demo extends Component {
     });
   }
 
-  handleQueryUser() {
-    ge.queryUser().then((res) => {
+  handleGetUser() {
+    ge.getUser().then((res) => {
       console.log(res);
     });
   }

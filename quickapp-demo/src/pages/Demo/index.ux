@@ -11,7 +11,7 @@
       class="btn"
       type="button"
       value="查询用户信息"
-      onclick="handleQueryUser"
+      onclick="handleGetUser"
     />
 
     <input
@@ -146,8 +146,8 @@ export default {
         console.log("success");
       });
   },
-  handleQueryUser() {
-    ge.queryUser().then((data) => {
+  handleGetUser() {
+    ge.getUser().then((data) => {
       console.log(data);
     });
   },//事件上报相关demo
