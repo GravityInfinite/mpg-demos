@@ -12,6 +12,8 @@ declare class GravityAnalyticsAPI {
   setSuperProperties(properties: any): void;
   unsetSuperProperty(properties: any): void;
   clearSuperProperties(): void;
+  getSuperProperties(): any;
+  getSendProperties(): any;
   registerEvent(): void;
   loginEvent(): void;
   logoutEvent(): void;
@@ -31,7 +33,7 @@ declare class GravityAnalyticsAPI {
   bindTAThirdPlatform(taAccountId: string, taDistinctId: string): void;
   register(data: any): any;
   handleEvent(data: any): any;
-  getUser(): any;
+  queryUserInfo(): any;
   registerApp(properties: any): void;
   userSet(properties: any): void;
   userSetOnce(properties: any): void;
