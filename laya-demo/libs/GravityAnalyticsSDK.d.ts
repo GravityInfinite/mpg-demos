@@ -26,7 +26,7 @@ declare class GravityAnalyticsAPI {
   ): void;
   adShowEvent(ad_type: string, ad_unit_id: string, otherProperties: any): void;
   reportBytedanceAdToGravity(
-    open_id: string,
+    ad_type: string,
     ad_unit_id: string,
     otherProperties: any
   ): any;
