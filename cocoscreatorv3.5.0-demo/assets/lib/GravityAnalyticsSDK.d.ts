@@ -1,6 +1,6 @@
 declare class GravityAnalyticsAPI {
   constructor(config: any);
-  init(): void;
+  setupAndStart(): void;
   track(eventName: string): void;
   track(eventName: string, properties: any): void;
   track(eventName: string, properties: any, time: any): void;
@@ -31,15 +31,14 @@ declare class GravityAnalyticsAPI {
     otherProperties: any
   ): any;
   bindTAThirdPlatform(taAccountId: string, taDistinctId: string): void;
-  register(data: any): any;
-  registerWithHistoryUserInfo(
+  initialize(data: any): any;
+  initializeWithHistoryUserInfo(
     data: any,
     history_info: {
       company: string;
       create_time: number;
     }
   ): any;
-  handleEvent(data: any): any;
   queryUserInfo(): any;
   registerApp(properties: any): void;
   userSet(properties: any): void;
