@@ -25,11 +25,6 @@ declare class GravityAnalyticsAPI {
     pay_method: string
   ): void;
   adShowEvent(ad_type: string, ad_unit_id: string, otherProperties: any): void;
-  reportBytedanceAdToGravity(
-    ad_type: string,
-    ad_unit_id: string,
-    otherProperties: any
-  ): any;
   bindTAThirdPlatform(taAccountId: string, taDistinctId: string): void;
   initialize(data: any): any;
   initializeWithHistoryUserInfo(
