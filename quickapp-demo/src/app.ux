@@ -24,7 +24,7 @@ export default {
       debugMode: "debug", // debug or none
     };
     new GravityEngine(config);
-    ge.setupAndStart();
+    // ge.setupAndStart();
   }
 }
 </script>
