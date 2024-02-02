@@ -18,7 +18,7 @@ const config = {
 };
 new GravityEngine(config);
 
-ge.init();
+ge.setupAndStart();
 
 const ctx = canvas.getContext("2d");
 const buttonLocation = [];

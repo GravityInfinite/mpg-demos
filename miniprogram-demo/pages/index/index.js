@@ -7,7 +7,7 @@ Page({
   data: {},
   handleRegister() {
     ge
-      .register({
+      .initialize({
         name: "your_name",
         version: 123,
         wx_openid: "your_wx_openid",

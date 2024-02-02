@@ -20,13 +20,13 @@ export class Demo extends Component {
   start() {
     // TA SDK 配置对象
     ge = new GravityAnalyticsAPI(config);
-    ge.init();
+    ge.setupAndStart();
   }
 
   update(deltaTime: number) {}
 
   handleRegister() {
-    ge.register({
+    ge.initialize({
       name: "your_name",
       version: 123,
       wx_openid: "your_wx_openid",

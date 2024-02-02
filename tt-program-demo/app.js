@@ -16,7 +16,7 @@ const config = {
   debugMode: "none", // debug or none
 };
 const ge = new GravityEngine(config);
-ge.init();
+ge.setupAndStart();
 App({
   onLaunch() {},
   globalData: {

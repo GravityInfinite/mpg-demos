@@ -23,7 +23,7 @@ export default class Demo extends Laya.Scene {
       debugMode: "debug", // debug or none
     };
     ge = new GravityAnalyticsAPI(config);
-    ge.init();
+    ge.setupAndStart();
 
     this.scene.btn1.on(Event.CLICK, this, this.handleRegister);
     this.scene.btn2.on(Event.CLICK, this, this.handleEvent);
@@ -44,7 +44,7 @@ export default class Demo extends Laya.Scene {
   }
   //单击方法
   handleRegister() {
-    ge.register({
+    ge.initialize({
       name: "your_name",
       version: 123,
       wx_openid: "your_wx_openid",

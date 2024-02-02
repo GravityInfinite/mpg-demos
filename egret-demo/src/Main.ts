@@ -43,7 +43,7 @@ class Main extends eui.UILayer {
       debugMode: "debug", // debug or none
     };
     ge = new GravityAnalyticsAPI(config);
-    ge.init();
+    ge.setupAndStart();
   }
 
   protected createChildren(): void {
@@ -245,7 +245,7 @@ class Main extends eui.UILayer {
   }
 
   handleRegister() {
-    ge.register({
+    ge.initialize({
       name: "your_name",
       version: 123,
       wx_openid: "your_wx_openid",
