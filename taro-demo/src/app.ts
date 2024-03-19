@@ -5,7 +5,7 @@ import GravityEngine from "./gravityengine.taro";
 
 const config = {
   accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi", // 项目通行证，在：网站后台-->设置-->应用列表中找到Access Token列 复制（首次使用可能需要先新增应用）
-  clientId: "your_client_id", // 用户唯一标识，如产品为小游戏，则必须填用户openid（注意，不是小游戏的APPID！！！）
+  clientId: "your_client_id22456", // 用户唯一标识，如产品为小游戏，则必须填用户openid（注意，不是小游戏的APPID！！！）
   autoTrack: {
     appLaunch: true, // 自动采集 $MPLaunch
     appShow: true, // 自动采集 $MPShow

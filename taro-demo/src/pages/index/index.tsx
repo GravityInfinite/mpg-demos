@@ -9,12 +9,23 @@ export default function Index() {
   });
 
   function handleClick() {
-    ge.userSetOnce({ user_name: "TestUser" });
+    ge.initialize({
+      name: "your_name",
+      version: 123,
+      openid: "your_openid",
+      enable_sync_attribution: false,
+    })
+      .then((res) => {
+        console.log("initialize success " + res);
+      })
+      .catch((err) => {
+        console.log("initialize failed, error is " + err);
+      });
   }
 
   return (
     <View>
-      <Button onClick={handleClick}>button</Button>
+      <Button onClick={handleClick}>注册</Button>
     </View>
   );
 }
