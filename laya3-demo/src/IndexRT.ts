@@ -15,21 +15,18 @@ export default class IndexRT extends IndexRTBase {
   onEnable(): void {
     console.log("IndexRT onEnable");
 
-    let openId = "4bdfdec2-81df-4cce-b22a-824cd88d8635";
     const config = {
-      accessToken: "F7sJDouIAtky4KZWMNqCjUl0Yfhwxczv", // 项目通行证，在：网站后台-->设置-->应用列表中找到Access Token列 复制（首次使用可能需要先新增应用）
-      clientId: openId, // 用户唯一标识，如产品为小游戏，则必须填用户openid（注意，不是小游戏的APPID！！！）
+      accessToken: "gZGljPsq7I4wc3BMvkAUsevQznx1jahi",
+      clientId: "your_client_id", // 用户唯一标识，如微信小程序的openid
       autoTrack: {
         appLaunch: true, // 自动采集 $MPLaunch
         appShow: true, // 自动采集 $MPShow
-        appHide: true, // 自动采集 $MPHided
-        //     pageShow: true, // 自动采集 $MPViewScreen
-        //     pageShare: true, // 自动采集 $MPShare
+        appHide: true, // 自动采集 $MPHide
       },
-      name: "ge", // 全局变量名称
-      // debugMode: "debug", // 是否开启测试模式，开启测试模式后，可以在 网站后台--设置--元数据--事件流中查看实时数据上报结果。（测试时使用，上线之后一定要关掉，改成none或者删除）
+      name: "gravityEngine", // 全局变量名称
+      enablePersistence: true, // 是否缓存
+      debugMode: "debug", // debug or none
     };
-    console.log(Laya.Browser.onAlipayMiniGame,112)
     try {
       this.ge = new GravityAnalyticsAPI(config);
     } catch (e) {
