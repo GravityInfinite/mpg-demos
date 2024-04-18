@@ -1,0 +1,452 @@
+{
+  "_$ver": 1,
+  "_$id": "vzwmzfgv1o",
+  "_$type": "Box",
+  "name": "View",
+  "width": 1000,
+  "height": 750,
+  "left": 0,
+  "right": 334,
+  "top": 0,
+  "bottom": 0,
+  "_$comp": [
+    {
+      "_$type": "8e9e65f1-666d-40bb-95c9-f538963105c9",
+      "scriptPath": "../src/scence/uiDemo/useUI/PhysicalCollisionRT.ts",
+      "bTop": {
+        "_$ref": "u3f7qkfa"
+      },
+      "bBottom": {
+        "_$ref": "u3f7qkfb"
+      },
+      "bRight": {
+        "_$ref": "u3f7qkfc"
+      },
+      "bLeft": {
+        "_$ref": "u3f7qkfd"
+      }
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "xvlhb5mt",
+      "_$type": "Image",
+      "name": "Image",
+      "width": 983,
+      "height": 750,
+      "left": 0,
+      "top": 0,
+      "bottom": 0,
+      "skin": "resources/UI/images/bg/img_bg13.png",
+      "sizeGrid": "10,18,19,19,0",
+      "color": "#ffffff",
+      "_$child": [
+        {
+          "_$id": "u3f7qkfa",
+          "_$type": "Image",
+          "name": "bTop",
+          "x": 44,
+          "y": 20,
+          "width": 900,
+          "height": 20,
+          "left": 44,
+          "skin": "resources/UI/images/test/block.png",
+          "sizeGrid": "1,1,1,1,0",
+          "color": "#ffffff",
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "static"
+            },
+            {
+              "_$type": "BoxCollider",
+              "label": "111",
+              "width": 900,
+              "height": 20
+            }
+          ]
+        },
+        {
+          "_$id": "u3f7qkfb",
+          "_$type": "Image",
+          "name": "bBottom",
+          "x": 45,
+          "y": 710,
+          "width": 900,
+          "height": 22,
+          "bottom": 18,
+          "skin": "resources/UI/images/test/block.png",
+          "sizeGrid": "1,1,1,1,0",
+          "color": "#ffffff",
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "static"
+            },
+            {
+              "_$type": "BoxCollider",
+              "width": 900,
+              "height": 22
+            }
+          ]
+        },
+        {
+          "_$id": "u3f7qkfc",
+          "_$type": "Image",
+          "name": "bLeft",
+          "x": 40,
+          "y": 30,
+          "width": 20,
+          "height": 692,
+          "top": 30,
+          "bottom": 28,
+          "skin": "resources/UI/images/test/block.png",
+          "sizeGrid": "1,1,1,1,0",
+          "color": "#ffffff",
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "static"
+            },
+            {
+              "_$type": "BoxCollider",
+              "width": 20,
+              "height": 692
+            }
+          ]
+        },
+        {
+          "_$id": "u3f7qkfd",
+          "_$type": "Image",
+          "name": "bRight",
+          "x": 923,
+          "y": 30,
+          "width": 20,
+          "height": 690,
+          "top": 30,
+          "bottom": 30,
+          "skin": "resources/UI/images/test/block.png",
+          "sizeGrid": "1,1,1,1,0",
+          "color": "#ffffff",
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "static"
+            },
+            {
+              "_$type": "BoxCollider",
+              "width": 20,
+              "height": 690
+            }
+          ]
+        },
+        {
+          "_$id": "wutrsjlu",
+          "_$type": "Sprite",
+          "name": "ball",
+          "x": 550,
+          "y": 109,
+          "width": 30,
+          "height": 30,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "texture": {
+            "_$uuid": "663875fd-f12c-401f-a725-f7aa173d153c",
+            "_$type": "Texture"
+          },
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "gravityScale": 10
+            },
+            {
+              "_$type": "CircleCollider",
+              "restitution": 1,
+              "density": 100,
+              "radius": 15
+            }
+          ]
+        },
+        {
+          "_$id": "kmdosobw",
+          "_$type": "Image",
+          "name": "Image",
+          "x": 41,
+          "y": 464,
+          "width": 100,
+          "height": 100,
+          "rotation": -27,
+          "skin": "resources/UI/images/test/t1.png",
+          "color": "#ffffff",
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "static"
+            },
+            {
+              "_$type": "PolygonCollider",
+              "datas": [
+                50,
+                0,
+                100,
+                100,
+                0,
+                100
+              ]
+            }
+          ]
+        },
+        {
+          "_$id": "5g90wshs",
+          "_$type": "Image",
+          "name": "Image",
+          "x": 766,
+          "y": 374,
+          "width": 154,
+          "height": 84,
+          "skin": "resources/UI/images/test/tra.png",
+          "color": "#ffffff",
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "static"
+            },
+            {
+              "_$type": "PolygonCollider",
+              "datas": [
+                50,
+                0,
+                107,
+                0,
+                153,
+                83,
+                -1,
+                81
+              ]
+            }
+          ]
+        },
+        {
+          "_$id": "b3ylihax",
+          "_$type": "Image",
+          "name": "Image",
+          "x": 492,
+          "y": 385,
+          "width": 120,
+          "height": 120,
+          "anchorX": 0.5,
+          "anchorY": 0.5833333333333334,
+          "centerX": 0,
+          "centerY": 0,
+          "skin": "resources/UI/images/test/t1.png",
+          "color": "#ffffff",
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "kinematic",
+              "angularVelocity": 3.14
+            },
+            {
+              "_$type": "PolygonCollider",
+              "datas": [
+                60,
+                0,
+                120,
+                120,
+                0,
+                120
+              ]
+            }
+          ]
+        },
+        {
+          "_$id": "61go89g7",
+          "_$type": "Sprite",
+          "name": "laya",
+          "x": 670,
+          "y": 161,
+          "width": 100,
+          "height": 100,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "texture": {
+            "_$uuid": "dcd87746-84f7-4ec5-ad35-ad3b7fda2f7f",
+            "_$type": "Texture"
+          },
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "gravityScale": 2
+            },
+            {
+              "_$type": "CircleCollider"
+            },
+            {
+              "_$type": "DistanceJoint",
+              "otherBody": {
+                "_$ref": "wutrsjlu",
+                "_$type": "RigidBody"
+              },
+              "selfAnchor": [
+                50,
+                50
+              ],
+              "otherAnchor": [
+                15,
+                15
+              ],
+              "maxLength": 200
+            }
+          ]
+        },
+        {
+          "_$id": "xrclncob",
+          "_$type": "Image",
+          "name": "Image",
+          "x": 222,
+          "y": 255.99999999999994,
+          "width": 100,
+          "height": 100,
+          "skin": "resources/UI/images/test/b1.png",
+          "color": "#ffffff",
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "static"
+            },
+            {
+              "_$type": "BoxCollider",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        },
+        {
+          "_$id": "br3534rw",
+          "_$type": "Sprite",
+          "name": "Sprite",
+          "x": 459.5,
+          "y": 177.5,
+          "width": 115,
+          "height": 115,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "texture": {
+            "_$uuid": "b0c2e376-4db7-4f50-814e-21a31fc0cf45",
+            "_$type": "Texture"
+          },
+          "_$comp": [
+            {
+              "_$type": "RigidBody"
+            },
+            {
+              "_$type": "CircleCollider",
+              "restitution": 0.5,
+              "radius": 57
+            }
+          ]
+        },
+        {
+          "_$id": "br3534rw",
+          "_$type": "Sprite",
+          "name": "Sprite",
+          "x": 299.5,
+          "y": 126.5,
+          "width": 115,
+          "height": 115,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "texture": {
+            "_$uuid": "07ecef19-75a9-4cc5-b810-cf03b88c0bb7",
+            "_$type": "Texture"
+          },
+          "_$comp": [
+            {
+              "_$type": "RigidBody"
+            },
+            {
+              "_$type": "CircleCollider",
+              "restitution": 0.8,
+              "radius": 57
+            }
+          ]
+        },
+        {
+          "_$id": "wutrsjlu",
+          "_$type": "Sprite",
+          "name": "b2",
+          "x": 746,
+          "y": 72.99999999999999,
+          "width": 30,
+          "height": 30,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "texture": {
+            "_$uuid": "663875fd-f12c-401f-a725-f7aa173d153c",
+            "_$type": "Texture"
+          },
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "type": "static"
+            }
+          ]
+        },
+        {
+          "_$id": "ew3lf3u1",
+          "_$type": "Sprite",
+          "name": "ball(1)",
+          "x": 827,
+          "y": 88,
+          "width": 30,
+          "height": 30,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "texture": {
+            "_$uuid": "663875fd-f12c-401f-a725-f7aa173d153c",
+            "_$type": "Texture"
+          },
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "gravityScale": 10
+            },
+            {
+              "_$type": "CircleCollider",
+              "restitution": 1,
+              "density": 100,
+              "radius": 15
+            }
+          ]
+        },
+        {
+          "_$id": "2cl3m6m5",
+          "_$type": "Sprite",
+          "name": "ball(2)",
+          "x": 141,
+          "y": 100,
+          "width": 30,
+          "height": 30,
+          "anchorX": 0.5,
+          "anchorY": 0.5,
+          "texture": {
+            "_$uuid": "663875fd-f12c-401f-a725-f7aa173d153c",
+            "_$type": "Texture"
+          },
+          "_$comp": [
+            {
+              "_$type": "RigidBody",
+              "gravityScale": 10
+            },
+            {
+              "_$type": "CircleCollider",
+              "restitution": 1,
+              "density": 100,
+              "radius": 15
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

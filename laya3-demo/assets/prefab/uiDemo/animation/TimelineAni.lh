@@ -1,0 +1,328 @@
+{
+  "_$ver": 1,
+  "_$id": "vzwmzfgv1o",
+  "_$type": "Box",
+  "name": "View",
+  "width": 1000,
+  "height": 600,
+  "mouseEnabled": true,
+  "_$child": [
+    {
+      "_$id": "k0ftacui",
+      "_$type": "Image",
+      "name": "Image",
+      "x": 20,
+      "y": 20,
+      "width": 960,
+      "height": 560,
+      "mouseEnabled": true,
+      "left": 20,
+      "right": 20,
+      "top": 20,
+      "bottom": 20,
+      "skin": "resources/UI/images/bg/bg01.png",
+      "sizeGrid": "19,17,22,9,0",
+      "_$child": [
+        {
+          "_$id": "p5xnaf8o",
+          "_$type": "Image",
+          "name": "Image(2)",
+          "x": 20,
+          "y": 50,
+          "width": 920,
+          "height": 490,
+          "alpha": 0.5,
+          "left": 20,
+          "right": 20,
+          "top": 50,
+          "bottom": 20,
+          "skin": "resources/UI/images/bg/2.png",
+          "sizeGrid": "12,16,14,14,0"
+        },
+        {
+          "_$id": "y9l4e6sd",
+          "_$type": "Label",
+          "name": "Label",
+          "x": 330,
+          "y": 12.000000000000028,
+          "width": 303,
+          "height": 28,
+          "centerX": 1,
+          "text": "按住键盘的方向键可以让角色行走",
+          "fontSize": 20,
+          "color": "#070000",
+          "overflow": "visible",
+          "leading": 0,
+          "padding": "0,0,0,0"
+        },
+        {
+          "_$id": "n0ls3nwn",
+          "_$prefab": "0cd3682f-625d-4e1e-a028-de501358389e",
+          "name": "role",
+          "active": true,
+          "x": 399,
+          "y": 192,
+          "width": 100,
+          "height": 100,
+          "pivotX": 0,
+          "pivotY": 0,
+          "scaleX": 1,
+          "scaleY": 1,
+          "skewX": 0,
+          "skewY": 0,
+          "rotation": 0,
+          "visible": true,
+          "alpha": 1,
+          "zOrder": 0,
+          "blendMode": null,
+          "mouseEnabled": false,
+          "mouseThrough": false,
+          "hitTestPrior": false,
+          "drawCallOptimize": false,
+          "cacheAs": "none",
+          "texture": null,
+          "_$comp": [
+            {
+              "_$override": "Animator2D",
+              "controllerLayers": [
+                {
+                  "_$type": "AnimatorControllerLayer2D",
+                  "name": "Base Layer",
+                  "states": [
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "任何状态",
+                      "clipStart": 0
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "进入",
+                      "clipStart": 0
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runLeft",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "b3cbb34a-6a6e-47d6-a317-5e0f5f19b640",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runRight",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "4e11b62d-bf26-462f-9659-a9db2bc22540",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runLUp3",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "7a2c0e74-6c27-4a11-9cb5-49a4db5c1874",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runLUp2",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "a905c7a1-b7af-4e36-9a48-f05fe5254d61",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runLUp1",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "eb03c41e-ac09-4511-8837-35aaf894510f",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runRUp3",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "82025997-f078-4724-b39e-2556d5fb75e9",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runRUp2",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "7d552da1-bce6-416e-a6f9-c1ff3d366f21",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runRUp1",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "f0742c3b-b924-4627-a416-5d694c78779c",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runUp",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "d4d1d4d2-13c0-4601-81e0-eb80594f3688",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runLDown3",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "c8c1b7a1-6a0b-4a4c-b095-ce46fbbb773a",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runLDown2",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "abea1dfe-123f-4018-a4c4-56884ca1f2e3",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runLDown1",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "2330a7ad-f0c9-4bcd-9ead-4f834fd61178",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runRDown3",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "548ba76d-d02f-433e-9136-614565b4334c",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runRDown2",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "df176898-44ad-45a5-befc-d63f1bbfcdc4",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runRDown1",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "d56fa00a-5d63-4625-bf37-93f42cc21a46",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "runDown",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "cda52435-a3f1-4c73-a2ed-1e5349faa4e6",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "Lup",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "733d8525-25e1-4ef6-b58b-5b8b39d86353",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "Ldown",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "f6d699df-d008-4bd1-9f39-1086565093e3",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "Rup",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "a822fdb9-8945-4332-8d00-5a5e4062766c",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "Rdown",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "ad7f3ee2-a494-4cf5-88c7-95b2773ae554",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "up",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "77224e97-72b2-4005-b455-b844f805bb09",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "left",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "ccd9e0dd-a04f-4d67-8bd2-d148c573427c",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "right",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "107c199e-f9fe-4246-b4b7-37c10f5474a6",
+                        "_$type": "AnimationClip2D"
+                      }
+                    },
+                    {
+                      "_$type": "AnimatorState2D",
+                      "name": "down",
+                      "clipStart": 0,
+                      "clip": {
+                        "_$uuid": "ca0ad7da-bfb3-44ca-810f-0421abbe18dc",
+                        "_$type": "AnimationClip2D"
+                      }
+                    }
+                  ],
+                  "defaultStateName": "runLeft"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

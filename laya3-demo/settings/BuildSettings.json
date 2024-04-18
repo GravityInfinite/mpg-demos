@@ -1,0 +1,19 @@
+{
+  "name": "LayaProject22",
+  "startupScene": "res://939c6ee1-3ad7-4842-8dbd-5dabd6c7d7db",
+  "includedScenes": [
+    "res://393c5634-b596-4535-92d8-c011337d11c9",
+    "res://247bf8ac-8031-40f8-a13c-8d3014c736d9",
+    "res://3023c9aa-7ce6-417e-a3b9-63505fa49c18",
+    "res://12d5cd04-b5ce-4d21-80a5-069bfc76eefe",
+    "res://dc560573-e83f-4d0e-ae72-cae2ef70bcdb",
+    "res://60e3714c-2d38-4de7-8336-5b585fc9e602"
+  ],
+  "alwaysIncluded": [
+    "res://f6"
+  ],
+  "excludeFilesRule": [],
+  "wxgame": {
+    "appid": "wx16e722502b86127d"
+  }
+}

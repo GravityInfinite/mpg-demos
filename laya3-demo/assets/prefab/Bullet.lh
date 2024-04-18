@@ -1,0 +1,32 @@
+{
+  "_$ver": 1,
+  "_$id": "xhrhnbzp15",
+  "_$type": "Sprite",
+  "name": "buttle",
+  "width": 30,
+  "height": 30,
+  "texture": {
+    "_$uuid": "663875fd-f12c-401f-a725-f7aa173d153c",
+    "_$type": "Texture"
+  },
+  "_$comp": [
+    {
+      "_$type": "RigidBody",
+      "type": "kinematic",
+      "linearVelocity": {
+        "_$type": "Vector2"
+      },
+      "group": -2
+    },
+    {
+      "_$type": "CircleCollider",
+      "isSensor": true,
+      "label": "buttle",
+      "radius": 15
+    },
+    {
+      "_$type": "8485cffa-ef7f-45f7-88c0-f2e13463631b",
+      "scriptPath": "../src/prefab/Bullet.ts"
+    }
+  ]
+}

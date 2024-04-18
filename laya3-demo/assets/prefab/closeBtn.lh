@@ -1,0 +1,35 @@
+{
+  "_$ver": 1,
+  "_$id": "kijh4e8z9g",
+  "_$type": "Box",
+  "name": "DefaultNode",
+  "width": 32,
+  "height": 32,
+  "mouseEnabled": true,
+  "_$comp": [
+    {
+      "_$type": "0d00ae76-294e-46f3-af30-cee14c7f22ef",
+      "scriptPath": "../src/prefab/CloseBtn.ts"
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "jd6ni6ak",
+      "_$type": "Button",
+      "name": "Button",
+      "x": -5,
+      "y": 5,
+      "width": 32,
+      "height": 32,
+      "mouseEnabled": true,
+      "left": -5,
+      "right": 5,
+      "top": 5,
+      "bottom": -5,
+      "skin": "res://310f8fa1-165e-45f6-ad06-ffebf0732f5e",
+      "label": "",
+      "labelFont": "",
+      "labelSize": 20
+    }
+  ]
+}

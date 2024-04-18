@@ -1,0 +1,171 @@
+{
+  "_$ver": 1,
+  "_$id": "vzwmzfgv1o",
+  "_$runtime": "res://cedd2b06-c112-4fd2-9526-072299ded214",
+  "_$type": "Box",
+  "name": "View",
+  "y": 10,
+  "width": 1334,
+  "height": 720,
+  "left": 0,
+  "right": 0,
+  "top": 10,
+  "bottom": 20,
+  "_$child": [
+    {
+      "_$id": "bi9p9dg4",
+      "_$type": "Sprite",
+      "name": "bg",
+      "width": 1000,
+      "height": 600,
+      "texture": {
+        "_$uuid": "baaf9fbd-98b6-47dd-9176-122742f8cd5b",
+        "_$type": "Texture"
+      }
+    },
+    {
+      "_$id": "bffnd63a",
+      "_$var": true,
+      "_$type": "Image",
+      "name": "bg2",
+      "x": -333,
+      "y": -240,
+      "width": 1000,
+      "height": 600,
+      "scaleX": 2,
+      "scaleY": 2,
+      "mask": {
+        "_$ref": "q295tw7w"
+      },
+      "hitArea": {
+        "_$type": "HitArea",
+        "_hitCmds": []
+      },
+      "centerX": 0,
+      "centerY": 0,
+      "skin": "resources/UI/images/bg/background.jpg",
+      "_$child": [
+        {
+          "_$id": "q295tw7w",
+          "_$var": true,
+          "_$type": "Sprite",
+          "name": "_mask",
+          "x": 541,
+          "y": 254.5,
+          "width": 100,
+          "height": 100,
+          "texture": {
+            "_$uuid": "dcd87746-84f7-4ec5-ad35-ad3b7fda2f7f",
+            "_$type": "Texture"
+          },
+          "mouseEnabled": true
+        }
+      ]
+    },
+    {
+      "_$id": "rl0rxde8",
+      "_$type": "Box",
+      "name": "maskBox",
+      "x": -5,
+      "y": 1,
+      "width": 458,
+      "height": 565,
+      "bgColor": "#030000"
+    },
+    {
+      "_$id": "afrkcskt",
+      "_$type": "Sprite",
+      "name": "bg3",
+      "x": -5,
+      "y": 1,
+      "width": 1000,
+      "height": 600,
+      "texture": {
+        "_$uuid": "baaf9fbd-98b6-47dd-9176-122742f8cd5b",
+        "_$type": "Texture"
+      },
+      "mouseEnabled": true,
+      "mouseThrough": true,
+      "mask": {
+        "_$ref": "9s9dfocw"
+      },
+      "_$child": [
+        {
+          "_$id": "9s9dfocw",
+          "_$var": true,
+          "_$type": "Sprite",
+          "name": "bg3Mask",
+          "width": 100,
+          "height": 100,
+          "texture": {
+            "_$uuid": "dcd87746-84f7-4ec5-ad35-ad3b7fda2f7f",
+            "_$type": "Texture"
+          },
+          "_$child": [
+            {
+              "_$id": "ynw9qqj2",
+              "_$type": "Sprite",
+              "name": "Sprite",
+              "x": 136,
+              "width": 100,
+              "height": 100,
+              "texture": {
+                "_$uuid": "dcd87746-84f7-4ec5-ad35-ad3b7fda2f7f",
+                "_$type": "Texture"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_$id": "b0wdjwk8",
+      "_$var": true,
+      "_$type": "Sprite",
+      "name": "_hitArea",
+      "x": -4,
+      "y": 1,
+      "width": 106,
+      "height": 100,
+      "mouseEnabled": true,
+      "hitArea": {
+        "_$type": "HitArea",
+        "_hitCmds": [
+          {
+            "_$type": "DrawCircleCmd",
+            "x": 50,
+            "y": 50,
+            "radius": 50,
+            "lineWidth": 1,
+            "lineColor": "#000000",
+            "fillColor": "#FFFFFF"
+          },
+          {
+            "_$type": "DrawCircleCmd",
+            "x": 186,
+            "y": 50,
+            "radius": 50,
+            "lineWidth": 1,
+            "lineColor": "#000000",
+            "fillColor": "#FFFFFF"
+          }
+        ]
+      }
+    },
+    {
+      "_$id": "z2b31rlu",
+      "_$type": "Label",
+      "name": "Label",
+      "x": 327.0000000000001,
+      "y": 13.000000000000043,
+      "width": 120,
+      "height": 28,
+      "text": "黑色部分按住mask可拖拽移动   其他区域，直接移动鼠标查看放大效果",
+      "fontSize": 20,
+      "color": "#FFFFFF",
+      "overflow": "visible",
+      "leading": 0,
+      "padding": "0,0,0,0"
+    }
+  ]
+}

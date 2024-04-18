@@ -1,0 +1,51 @@
+{
+  "_$type": "Animator2D",
+  "enabled": true,
+  "controller": null,
+  "controllerLayers": [
+    {
+      "_$type": "AnimatorControllerLayer2D",
+      "name": "Base Layer",
+      "states": [
+        {
+          "_$type": "AnimatorState2D",
+          "name": "cd",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "93eb94c7-1bf5-470e-80ce-647570dcb0d0",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 723.8344345537132,
+          "y": 402.62456051242407,
+          "id": "0"
+        },
+        {
+          "x": 10,
+          "y": 100,
+          "id": "-1",
+          "name": "进入",
+          "soloTransitions": [
+            {
+              "id": "0"
+            }
+          ]
+        },
+        {
+          "x": 724,
+          "y": 100,
+          "id": "-2",
+          "name": "任何状态"
+        }
+      ],
+      "playOnWake": true,
+      "blendingMode": 0,
+      "defaultWeight": 1
+    }
+  ],
+  "layerW": 150
+}

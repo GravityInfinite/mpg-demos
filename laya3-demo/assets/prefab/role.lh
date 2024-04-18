@@ -1,0 +1,37 @@
+{
+  "_$ver": 1,
+  "_$id": "mqit7y2u19",
+  "_$type": "Sprite",
+  "name": "Sprite",
+  "width": 100,
+  "height": 100,
+  "_$comp": [
+    {
+      "_$type": "0e49c2ec-1e7b-4998-bed3-d333d3dd9d69",
+      "scriptPath": "../src/prefab/Role.ts",
+      "role1": {
+        "_$ref": "mqit7y2u19"
+      }
+    },
+    {
+      "_$type": "Animator2D",
+      "controller": {
+        "_$uuid": "a09f1a7a-f38a-497a-b545-4fe257bfba97",
+        "_$type": "AnimationController2D"
+      },
+      "controllerLayers": []
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "y2tmer50",
+      "_$type": "Image",
+      "name": "Image1",
+      "x": 96,
+      "width": 96,
+      "height": 96,
+      "scaleX": -1,
+      "skin": "res://5ba6b53e-deb0-42d6-9ab6-5f46922b0a71"
+    }
+  ]
+}

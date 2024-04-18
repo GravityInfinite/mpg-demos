@@ -1,0 +1,49 @@
+{
+  "_$ver": 1,
+  "_$id": "5z147upk35",
+  "_$type": "Sprite",
+  "name": "levelTxt",
+  "width": 100,
+  "height": 100,
+  "texture": {
+    "_$uuid": "0b31fb51-aed5-475f-a0d9-32660d6448b7",
+    "_$type": "Texture"
+  },
+  "_$comp": [
+    {
+      "_$type": "RigidBody",
+      "gravityScale": 0.5,
+      "linearVelocity": {
+        "_$type": "Vector2"
+      },
+      "group": -1
+    },
+    {
+      "_$type": "BoxCollider"
+    },
+    {
+      "_$type": "dcbdb734-214b-4808-9e50-0a6a4eb56809",
+      "scriptPath": "../src/prefab/DropBox.ts",
+      "level": 1
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "f0jma7xx",
+      "_$type": "Label",
+      "name": "levelTxt",
+      "x": 9,
+      "y": 4,
+      "width": 77,
+      "height": 92,
+      "text": "1",
+      "fontSize": 100,
+      "color": "#FFFFFF",
+      "align": "center",
+      "valign": "middle",
+      "overflow": "visible",
+      "leading": 0,
+      "padding": "0,0,0,0"
+    }
+  ]
+}

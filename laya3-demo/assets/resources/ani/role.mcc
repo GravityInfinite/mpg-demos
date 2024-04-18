@@ -1,0 +1,445 @@
+{
+  "_$type": "Animator2D",
+  "enabled": true,
+  "controller": null,
+  "controllerLayers": [
+    {
+      "_$type": "AnimatorControllerLayer2D",
+      "name": "Base Layer",
+      "states": [
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runLeft",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "b3cbb34a-6a6e-47d6-a317-5e0f5f19b640",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 441.7154458993748,
+          "y": 282.6258573489096,
+          "id": "23"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runRight",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "4e11b62d-bf26-462f-9659-a9db2bc22540",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 510.9248729562912,
+          "y": 237.4778598092821,
+          "id": "22"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runLUp3",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "7a2c0e74-6c27-4a11-9cb5-49a4db5c1874",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 575.7558262768684,
+          "y": 294.62608987907936,
+          "id": "21"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runLUp2",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "a905c7a1-b7af-4e36-9a48-f05fe5254d61",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 239.98478260614374,
+          "y": 141.31766182333183,
+          "id": "20"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runLUp1",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "eb03c41e-ac09-4511-8837-35aaf894510f",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 672.7955807973453,
+          "y": 231.91162328006524,
+          "id": "19"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runRUp3",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "82025997-f078-4724-b39e-2556d5fb75e9",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 542.9439985169099,
+          "y": 460.7545686591362,
+          "id": "18"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runRUp2",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "7d552da1-bce6-416e-a6f9-c1ff3d366f21",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 91.86570163519508,
+          "y": 308.5262485514306,
+          "id": "17"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runRUp1",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "f0742c3b-b924-4627-a416-5d694c78779c",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 359.1626195783425,
+          "y": 349.49628363339235,
+          "id": "16"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runUp",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "d4d1d4d2-13c0-4601-81e0-eb80594f3688",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 170.90119146762265,
+          "y": 170.16530731266212,
+          "id": "15"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runLDown3",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "c8c1b7a1-6a0b-4a4c-b095-ce46fbbb773a",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 281.4048823228848,
+          "y": 426.8613408747571,
+          "id": "14"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runLDown2",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "abea1dfe-123f-4018-a4c4-56884ca1f2e3",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 589.5117868911087,
+          "y": 59.156153486817544,
+          "id": "13"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runLDown1",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "2330a7ad-f0c9-4bcd-9ead-4f834fd61178",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 367.84263234401743,
+          "y": -4.489617549753149,
+          "id": "12"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runRDown3",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "548ba76d-d02f-433e-9136-614565b4334c",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 359.1648904542937,
+          "y": 154.59883167716356,
+          "id": "11"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runRDown2",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "df176898-44ad-45a5-befc-d63f1bbfcdc4",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 571.4239342541769,
+          "y": 109.42419079285013,
+          "id": "10"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runRDown1",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "d56fa00a-5d63-4625-bf37-93f42cc21a46",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 185.71603252573783,
+          "y": 254.23901380568242,
+          "id": "9"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "runDown",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "cda52435-a3f1-4c73-a2ed-1e5349faa4e6",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 130.6170317279146,
+          "y": 360.7200911702744,
+          "id": "8"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "Lup",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "733d8525-25e1-4ef6-b58b-5b8b39d86353",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 622.1474611862453,
+          "y": 212.50694034532975,
+          "id": "7"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "Ldown",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "f6d699df-d008-4bd1-9f39-1086565093e3",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 457.54633850786365,
+          "y": 76.91364689327878,
+          "id": "6"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "Rup",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "a822fdb9-8945-4332-8d00-5a5e4062766c",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 129.96287128097168,
+          "y": 64.59620474492353,
+          "id": "5"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "Rdown",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "ad7f3ee2-a494-4cf5-88c7-95b2773ae554",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 188.78360579511676,
+          "y": 480.2837834447778,
+          "id": "4"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "up",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "77224e97-72b2-4005-b455-b844f805bb09",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 232.56853765928756,
+          "y": 321.6239987536361,
+          "id": "3"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "left",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "ccd9e0dd-a04f-4d67-8bd2-d148c573427c",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 110.76605544152937,
+          "y": 199.59600663755214,
+          "id": "2"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "right",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "107c199e-f9fe-4246-b4b7-37c10f5474a6",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 61.373470110409016,
+          "y": 245.05041694821665,
+          "id": "1"
+        },
+        {
+          "_$type": "AnimatorState2D",
+          "name": "down",
+          "speed": 1,
+          "clipStart": 0,
+          "clipEnd": 1,
+          "clip": {
+            "_$uuid": "ca0ad7da-bfb3-44ca-810f-0421abbe18dc",
+            "_$type": "AnimationClip2D"
+          },
+          "loop": -1,
+          "yoyo": false,
+          "soloTransitions": null,
+          "x": 536.0991556006032,
+          "y": 381.00399184376965,
+          "id": "0"
+        },
+        {
+          "x": 10,
+          "y": 100,
+          "id": "-1",
+          "name": "进入",
+          "soloTransitions": [
+            {
+              "id": "0"
+            }
+          ]
+        },
+        {
+          "x": 724,
+          "y": 100,
+          "id": "-2",
+          "name": "任何状态"
+        }
+      ],
+      "playOnWake": true,
+      "blendingMode": 0,
+      "defaultWeight": 1,
+      "stageX": 192.26031746031742,
+      "stageY": 71.09841269841269,
+      "stageScale": 0.8
+    }
+  ],
+  "layerW": 150
+}

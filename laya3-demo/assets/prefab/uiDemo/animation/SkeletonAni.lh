@@ -1,0 +1,97 @@
+{
+  "_$ver": 1,
+  "_$id": "vzwmzfgv1o",
+  "_$type": "Box",
+  "name": "View",
+  "width": 1000,
+  "height": 600,
+  "mouseEnabled": true,
+  "_$comp": [
+    {
+      "_$type": "a93776c6-6457-4f88-b445-ef78aa5cb42e",
+      "scriptPath": "../src/scence/uiDemo/animation/SkeletonAni.ts"
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "myqv7ol5",
+      "_$type": "Panel",
+      "name": "layaSpine",
+      "x": 929,
+      "y": 178.00000000000006,
+      "width": 250,
+      "height": 185,
+      "scaleX": -1,
+      "_$child": [
+        {
+          "_$id": "cjb4zbzm",
+          "_$type": "Skeleton",
+          "name": "Skeleton",
+          "x": 120,
+          "y": 110,
+          "width": 41,
+          "height": 16,
+          "scaleX": 0.3,
+          "scaleY": 0.3,
+          "source": "res://1bb604f8-feb3-4f94-b704-2c8d75b7a908",
+          "animationName": "flying",
+          "preview": true
+        }
+      ]
+    },
+    {
+      "_$id": "vx1qh5zb",
+      "_$type": "Sprite",
+      "name": "skeletonNode",
+      "x": 31.999999999999968,
+      "y": 35.99999999999999,
+      "width": 300,
+      "height": 500,
+      "mouseEnabled": true,
+      "_$child": [
+        {
+          "_$id": "opo998gd",
+          "_$type": "Button",
+          "name": "playAni",
+          "x": 51,
+          "y": 2.0000000000000213,
+          "width": 197,
+          "height": 73,
+          "mouseEnabled": true,
+          "centerX": -1,
+          "stateNum": 1,
+          "skin": "resources/UI/images/bg/btn_Bg.png",
+          "label": "切换皮肤",
+          "labelSize": 30
+        }
+      ]
+    },
+    {
+      "_$id": "vx1qh5zb",
+      "_$type": "Sprite",
+      "name": "spineNode",
+      "x": 335.99999999999994,
+      "y": 34.999999999999986,
+      "width": 300,
+      "height": 500,
+      "mouseEnabled": true,
+      "_$child": [
+        {
+          "_$id": "39z4eog1",
+          "_$type": "Button",
+          "name": "playAni",
+          "x": 51,
+          "y": 3.0000000000000213,
+          "width": 197,
+          "height": 73,
+          "mouseEnabled": true,
+          "centerX": -1,
+          "stateNum": 1,
+          "skin": "resources/UI/images/bg/btn_Bg.png",
+          "label": "切换皮肤",
+          "labelSize": 30
+        }
+      ]
+    }
+  ]
+}

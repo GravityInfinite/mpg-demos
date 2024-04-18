@@ -1,0 +1,96 @@
+{
+  "version": "LAYAMATERIAL:04",
+  "props": {
+    "textures": [
+      {
+        "path": "res://5afc3908-57d5-43a4-816d-8f191c27dbb5",
+        "constructParams": [
+          512,
+          512,
+          1,
+          false
+        ],
+        "propertyParams": {
+          "filterMode": 1,
+          "wrapModeU": 0,
+          "wrapModeV": 0,
+          "anisoLevel": 1
+        },
+        "name": "u_AlbedoTexture"
+      },
+      {
+        "path": "res://e501c3c7-919c-46b9-8846-ff0bc0fd768f",
+        "constructParams": [
+          512,
+          512,
+          1,
+          false
+        ],
+        "propertyParams": {
+          "filterMode": 1,
+          "wrapModeU": 0,
+          "wrapModeV": 0,
+          "anisoLevel": 1
+        },
+        "name": "u_NormalTexture"
+      },
+      {
+        "name": "u_OcclusionTexture"
+      },
+      {
+        "name": "u_EmissionTexture"
+      },
+      {
+        "path": "res://d60ac597-99b4-45c0-a4e5-857e1c8b42a6",
+        "constructParams": [
+          512,
+          512,
+          1,
+          false
+        ],
+        "propertyParams": {
+          "filterMode": 1,
+          "wrapModeU": 0,
+          "wrapModeV": 0,
+          "anisoLevel": 1
+        },
+        "name": "u_MetallicGlossTexture"
+      }
+    ],
+    "type": "PBR",
+    "renderQueue": 2000,
+    "u_AlbedoColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "u_TilingOffset": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "u_NormalScale": 1,
+    "u_Smoothness": 0.5,
+    "u_SmoothnessScale": 1,
+    "u_EmissionColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "u_EmissionIntensity": 1,
+    "u_Metallic": 0,
+    "u_AlphaTestValue": 0.5,
+    "s_Cull": 2,
+    "s_Blend": 0,
+    "s_DepthTest": 1,
+    "s_DepthWrite": true,
+    "defines": [
+      "ALBEDOTEXTURE",
+      "NORMALTEXTURE",
+      "METALLICGLOSSTEXTURE"
+    ]
+  }
+}

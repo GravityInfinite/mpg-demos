@@ -1,0 +1,259 @@
+{
+  "_$ver": 1,
+  "_$id": "vzwmzfgv1o",
+  "_$type": "Box",
+  "name": "View",
+  "width": 1000,
+  "height": 600,
+  "_$comp": [
+    {
+      "_$type": "ba580231-67c2-40a8-a285-22729e96c916",
+      "scriptPath": "../src/scence/uiDemo/useUI/ChangeTextureRT.ts",
+      "Img": {
+        "_$ref": "0o0x2k35"
+      },
+      "spImg": {
+        "_$ref": "4mlgibbk"
+      },
+      "graphicsSprite": {
+        "_$ref": "nh62vwtd"
+      },
+      "textureImg": {
+        "_$ref": "78yxtz9p"
+      }
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "xvlhb5mt",
+      "_$type": "Image",
+      "name": "Image",
+      "width": 1000,
+      "height": 600,
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0,
+      "skin": "resources/UI/images/bg/img_bg13.png",
+      "sizeGrid": "10,18,19,19,0",
+      "color": "#ffffff",
+      "_$child": [
+        {
+          "_$id": "66qvgu9t",
+          "_$type": "Image",
+          "name": "Image",
+          "x": 190,
+          "y": 196,
+          "width": 512,
+          "height": 313,
+          "alpha": 0.3,
+          "skin": "resources/UI/images/bg/2.png",
+          "sizeGrid": "13,16,16,18,0",
+          "color": "#ffffff"
+        },
+        {
+          "_$id": "kljhp1k6",
+          "_$type": "Image",
+          "name": "Image(1)",
+          "x": 833,
+          "y": 226,
+          "width": 132,
+          "height": 132,
+          "gray": true,
+          "skin": "resources/UI/role/w5.png",
+          "color": "#ffffff"
+        },
+        {
+          "_$id": "7n8czdy7",
+          "_$type": "Sprite",
+          "name": "Sprite",
+          "x": 10,
+          "y": 10,
+          "width": 977,
+          "height": 147,
+          "_$child": [
+            {
+              "_$id": "4mlgibbk",
+              "_$type": "Sprite",
+              "name": "spImg",
+              "x": 10,
+              "y": 6,
+              "width": 132,
+              "height": 132,
+              "texture": {
+                "_$uuid": "ac904af9-372f-45d4-9cc4-8b02d554e314",
+                "_$type": "Texture"
+              }
+            },
+            {
+              "_$id": "2323223",
+              "_$type": "Sprite",
+              "name": "Sprite",
+              "x": 341,
+              "y": 6,
+              "width": 132,
+              "height": 132,
+              "texture": {
+                "_$uuid": "ac904af9-372f-45d4-9cc4-8b02d554e314",
+                "_$type": "Texture"
+              },
+              "_filters": [
+                {
+                  "_$type": "BlurFilter"
+                }
+              ]
+            },
+            {
+              "_$id": "uj7jzz19",
+              "_$type": "Sprite",
+              "name": "Sprite",
+              "x": 177,
+              "y": 6,
+              "width": 132,
+              "height": 132,
+              "texture": {
+                "_$uuid": "ac904af9-372f-45d4-9cc4-8b02d554e314",
+                "_$type": "Texture"
+              },
+              "_filters": [
+                {
+                  "_$type": "GlowFilter",
+                  "offX": 11,
+                  "offY": 4,
+                  "blur": 5,
+                  "color": "#39778b"
+                }
+              ]
+            },
+            {
+              "_$id": "wdzqohff",
+              "_$type": "Sprite",
+              "name": "Sprite",
+              "x": 513,
+              "y": 6,
+              "width": 132,
+              "height": 132,
+              "texture": {
+                "_$uuid": "ac904af9-372f-45d4-9cc4-8b02d554e314",
+                "_$type": "Texture"
+              },
+              "_filters": [
+                {
+                  "_$type": "ColorFilter",
+                  "_color": "#8f8c8c",
+                  "_brightness": -18.393,
+                  "_contrast": 35.63,
+                  "_saturation": -100,
+                  "_hue": -88.508
+                }
+              ]
+            },
+            {
+              "_$id": "oqtjyqyp",
+              "_$type": "Sprite",
+              "name": "Sprite(1)",
+              "x": 671,
+              "y": 6,
+              "width": 132,
+              "height": 132,
+              "texture": {
+                "_$uuid": "ac904af9-372f-45d4-9cc4-8b02d554e314",
+                "_$type": "Texture"
+              },
+              "_filters": [
+                {
+                  "_$type": "ColorFilter",
+                  "_color": null,
+                  "_brightness": -68.634,
+                  "_contrast": 9.792,
+                  "_saturation": 58.62,
+                  "_hue": -54.161
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_$id": "0o0x2k35",
+          "_$type": "Image",
+          "name": "Img",
+          "x": 832,
+          "y": 430,
+          "width": 132,
+          "height": 132,
+          "skin": "resources/UI/role/w5.png",
+          "color": "#ffffff"
+        },
+        {
+          "_$id": "onzifd7n",
+          "_$type": "Label",
+          "name": "Label",
+          "x": 206.99999999999994,
+          "y": 214.00000000000003,
+          "width": 493,
+          "height": 285,
+          "text": "Sprite相对Image性能更好 \n\nImage的功能更加丰富\n\nFillTexture方便平铺填充 \n\nFillTexture与Texture基于Graphics绘图，不是节点，\n所以不能挂子节点和组件,但合理使用比sprite更省性能，\n例如把大量的节点绘图改为一个节点的Graphics绘图，\n能减少大量节点创建消",
+          "fontSize": 20,
+          "color": "#060000",
+          "valign": "bottom",
+          "leading": 5,
+          "padding": "0,0,0,0"
+        },
+        {
+          "_$id": "78yxtz9p",
+          "_$type": "Sprite",
+          "name": "textureImg",
+          "x": 23,
+          "y": 167.00000000000006,
+          "width": 132,
+          "height": 132,
+          "texture": {
+            "_$uuid": "337b6b89-cd43-48d6-aed9-f5ca4c375c7b",
+            "_$type": "Texture"
+          },
+          "_gcmds": [
+            {
+              "_$type": "FillTextureCmd",
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1,
+              "percent": true,
+              "offset": {
+                "_$type": "Point"
+              },
+              "color": 4294967295
+            }
+          ]
+        },
+        {
+          "_$id": "nh62vwtd",
+          "_$type": "Sprite",
+          "name": "fillTexture",
+          "x": 12,
+          "y": 314,
+          "width": 132,
+          "height": 277,
+          "_gcmds": [
+            {
+              "_$type": "FillTextureCmd",
+              "texture": {
+                "_$uuid": "73a5b967-6900-44ad-8f19-2172a8b662eb",
+                "_$type": "Texture"
+              },
+              "x": 0,
+              "y": 0,
+              "width": 1,
+              "height": 1,
+              "percent": true,
+              "offset": {
+                "_$type": "Point"
+              },
+              "color": 4294967295
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "_$ver": 1,
+  "_$id": "vzwmzfgv1o",
+  "_$type": "Box",
+  "name": "View",
+  "width": 960,
+  "height": 640,
+  "mouseEnabled": true,
+  "_$comp": [
+    {
+      "_$type": "66d331a0-91d0-4d68-a98c-65b2195e758d",
+      "scriptPath": "../src/scence/uiDemo/page/IframeElementRT.ts",
+      "videoBtn": {
+        "_$ref": "r2al12ym"
+      },
+      "closeBox": {
+        "_$ref": "rkweqbxr"
+      },
+      "iframeBox": {
+        "_$ref": "etd08hiq"
+      }
+    }
+  ],
+  "_$child": [
+    {
+      "_$id": "r2al12ym",
+      "_$type": "Button",
+      "name": "videoBtn",
+      "x": 308,
+      "y": 300,
+      "width": 344,
+      "height": 40,
+      "mouseEnabled": true,
+      "centerX": 0,
+      "centerY": 0,
+      "skin": "resources/UI/images/comp/button.png",
+      "sizeGrid": "12,32,12,32,0",
+      "label": "打开视频网页",
+      "labelSize": 20,
+      "labelColors": "#fafbfc,#32cc6b,#ff0000,#c0c0c0"
+    },
+    {
+      "_$id": "rkweqbxr",
+      "_$type": "Box",
+      "name": "closeBox",
+      "x": 869,
+      "y": 31,
+      "width": 60,
+      "height": 60
+    },
+    {
+      "_$id": "etd08hiq",
+      "_$type": "Box",
+      "name": "iframeBox",
+      "width": 960,
+      "height": 640,
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "bottom": 0
+    }
+  ]
+}

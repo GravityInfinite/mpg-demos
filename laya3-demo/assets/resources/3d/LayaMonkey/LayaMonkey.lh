@@ -1,0 +1,57 @@
+{
+  "_$ver": 1,
+  "_$id": "x28kdje171",
+  "_$type": "Sprite3D",
+  "name": "DefaultNode",
+  "transform": {
+    "localRotation": {
+      "_$type": "Quaternion",
+      "w": 1
+    }
+  },
+  "_$child": [
+    {
+      "_$id": "9t3df7ui",
+      "_$prefab": "6f2b50fa-4a8b-481d-9a54-2eb290f66fb2",
+      "name": "LayaMonkey",
+      "active": true,
+      "transform": {
+        "localPosition": {
+          "_$type": "Vector3",
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "localRotation": {
+          "_$type": "Quaternion",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "localScale": {
+          "_$type": "Vector3",
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "_$child": [
+        {
+          "_$override": "#71",
+          "_$comp": [
+            {
+              "_$override": "SkinnedMeshRenderer",
+              "sharedMaterials": [
+                {
+                  "_$uuid": "03504d11-2984-4c3d-88cc-e8d4aebde72b",
+                  "_$type": "Material"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

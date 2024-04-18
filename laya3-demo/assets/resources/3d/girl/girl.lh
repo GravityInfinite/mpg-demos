@@ -1,0 +1,141 @@
+{
+  "_$ver": 1,
+  "_$id": "ua06la010f",
+  "_$type": "Sprite3D",
+  "name": "Sprite3D",
+  "layer": 0,
+  "transform": {
+    "localRotation": {
+      "_$type": "Quaternion"
+    }
+  },
+  "_$child": [
+    {
+      "_$id": "ur7jwu9g",
+      "_$prefab": "d9da00fb-568e-4420-8f62-bc8465ac45fd",
+      "name": "f21",
+      "active": true,
+      "layer": 0,
+      "transform": {
+        "localPosition": {
+          "_$type": "Vector3",
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "localRotation": {
+          "_$type": "Quaternion",
+          "x": 0,
+          "y": 0,
+          "z": 0,
+          "w": 1
+        },
+        "localScale": {
+          "_$type": "Vector3",
+          "x": 1,
+          "y": 1,
+          "z": 1
+        }
+      },
+      "_$comp": [
+        {
+          "_$type": "Animator",
+          "path": "res://04fce757-224e-481e-b2ff-684cc88bedd4",
+          "cullingMode": 0,
+          "controllerLayers": [
+            {
+              "_$type": "AnimatorControllerLayer",
+              "name": "BaseLayer",
+              "states": [
+                {
+                  "_$type": "AnimatorState",
+                  "name": "Idle",
+                  "clipStart": 0,
+                  "clip": {
+                    "_$uuid": "87004d96-319d-454b-9ed5-8134302be780@lani0",
+                    "_$type": "AnimationClip"
+                  }
+                },
+                {
+                  "_$type": "AnimatorState",
+                  "name": "Run",
+                  "clipStart": 0,
+                  "clip": {
+                    "_$uuid": "8d32091d-ddca-4262-ae47-5c58a726ee19@lani0",
+                    "_$type": "AnimationClip"
+                  }
+                },
+                {
+                  "_$type": "AnimatorState",
+                  "name": "进入",
+                  "clipStart": 0
+                },
+                {
+                  "_$type": "AnimatorState",
+                  "name": "任何状态",
+                  "clipStart": 0
+                }
+              ],
+              "defaultStateName": "Idle"
+            }
+          ]
+        }
+      ],
+      "_$child": [
+        {
+          "_$override": "#121",
+          "transform": {
+            "localRotationEuler": {
+              "_$type": "Vector3",
+              "x": -84.62380659681969,
+              "y": 32.060029673114286,
+              "z": -123.3643554842961
+            },
+            "localPosition": {
+              "_$type": "Vector3",
+              "y": 0.9701279997825623
+            }
+          }
+        },
+        {
+          "_$override": "#196",
+          "_$comp": [
+            {
+              "_$override": "SkinnedMeshRenderer",
+              "sharedMaterials": [
+                {
+                  "_$uuid": "8f092e68-e2df-48c0-af14-18ba9e9ffb54",
+                  "_$type": "Material"
+                },
+                {
+                  "_$uuid": "77252fc0-5b53-4022-81c0-7ef4f8ab6b0b",
+                  "_$type": "Material"
+                },
+                {
+                  "_$uuid": "51147040-2198-468d-95a9-5ad78b04ff13",
+                  "_$type": "Material"
+                },
+                {
+                  "_$uuid": "1640514f-faae-4699-8f9d-3d921b7a4a52",
+                  "_$type": "Material"
+                },
+                {
+                  "_$uuid": "443d144d-b03c-4d81-ace7-a52ceef2f8e4",
+                  "_$type": "Material"
+                },
+                {
+                  "_$uuid": "0c18dc1a-e352-4772-aadd-132cf0d95e33",
+                  "_$type": "Material"
+                },
+                {
+                  "_$uuid": "082b4db4-bec5-492e-a378-4a63ef99af7d",
+                  "_$type": "Material"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
