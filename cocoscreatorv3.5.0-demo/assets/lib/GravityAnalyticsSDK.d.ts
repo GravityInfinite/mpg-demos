@@ -34,8 +34,6 @@ declare class GravityAnalyticsAPI {
       create_time: number;
     }
   ): any;
-  queryUserInfo(): any;
-  registerApp(properties: any): void;
   userSet(properties: any): void;
   userSetOnce(properties: any): void;
   userAppend(properties: any): void;
