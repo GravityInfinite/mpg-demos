@@ -11,7 +11,6 @@ Page({
         name: "your_name",
         version: 123,
         wx_openid: "your_wx_openid",
-        wx_unionid: "your_wx_unionid",
       }).then((res) => {
         console.log(res)
       })

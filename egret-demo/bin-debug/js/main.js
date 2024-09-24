@@ -691,7 +691,6 @@ var Main = /** @class */ (function (_super) {
             name: "your_name",
             version: 123,
             wx_openid: "your_wx_openid",
-            wx_unionid: "your_wx_unionid",
         });
     };
     Main.prototype.handleEvent = function () {

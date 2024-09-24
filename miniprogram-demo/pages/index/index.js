@@ -26,25 +26,11 @@ Page({
     console.log(e.detail.userInfo)
   },
   handleRegister() {
-    wx.getSetting({
-      success (res){
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-          wx.getUserInfo({
-            success: function(res) {
-              console.log(res.userInfo)
-            }
-          })
-        }
-      }
-    })
-    return
     ge
       .initialize({
         name: "your_name",
         version: 123,
         wx_openid: "your_wx_openid",
-        wx_unionid: "your_wx_unionid",
       }).then((res) => {
         console.log(res)
       }).catch((err) => {
