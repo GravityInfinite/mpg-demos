@@ -1,0 +1,416 @@
+{
+  "__version__": "3.0.7",
+  "builder": {
+    "options": {
+      "web-desktop": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "taobao-mini-game": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "wechatgame": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "oppo-mini-game": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "huawei-quick-game": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "vivo-mini-game": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "bytedance-mini-game": {
+        "configID": "d48c3e",
+        "services": []
+      }
+    },
+    "taskOptionsMap": {
+      "1724841738192": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "1724841902683": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "1724842826486": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724842832651": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724843046442": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724843054125": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724843319245": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724843323772": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724843880389": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724844101148": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724844427876": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724844586847": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724844917522": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724844984198": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724845129233": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724845303639": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724898420750": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724898515234": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724898821834": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724898889452": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724899041219": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724899145087": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724899299221": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724900026944": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724900152858": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724900286247": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724900507237": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724900683181": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724901225576": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724902172910": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724902380833": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1724902654715": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1725332072783": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "1725332720624": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1725336351352": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "1725336536032": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1725345317692": {
+        "configID": "d48c3e",
+        "services": []
+      },
+      "1725529247052": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1725529900100": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1725529916198": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1725530537089": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1725530543538": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726053020913": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726053517911": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726053712448": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726053977117": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726054066684": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726054691417": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726054772878": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726054924785": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726055079825": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726055148071": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107032009": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107062095": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107218510": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107253335": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107302709": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107345164": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107376155": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107409384": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107488432": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107593394": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107607334": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107638603": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726107684118": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726108225898": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726108483902": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726108669610": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726108701451": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726108813603": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726108923905": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726109048003": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726109167812": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726109220335": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726109404156": {
+        "configID": "d48c3e",
+        "services": [],
+        "__version__": "3.0.7"
+      },
+      "1726649688189": {
+        "configID": "d48c3e",
+        "services": []
+      }
+    },
+    "__version__": "1.3.8"
+  },
+  "builder-options": {
+    "configID": "d48c3e",
+    "services": []
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "__version__": "1.0.1",
+  "builder": {
+    "common": {
+      "buildPath": "project://build",
+      "outputName": "taobao-mini-game",
+      "mainBundleCompressionType": "merge_dep",
+      "platform": "taobao-mini-game"
+    },
+    "taskOptionsMap": {
+      "1724841738192": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724842832651": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724843046442": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724843323772": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724843880389": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724844101148": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724844427876": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724844586847": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724844917522": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724845129233": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724845303639": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724898420750": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724898515234": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724898821834": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724898889452": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724899041219": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724899145087": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724899299221": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724900026944": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724900152858": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724900286247": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724900507237": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724900683181": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724901225576": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724902172910": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724902380833": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1724902654715": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1725529247052": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1725529900100": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      },
+      "1725530543538": {
+        "deviceOrientation": "portrait",
+        "globalVariable": "",
+        "separateEngine": false,
+        "__version__": "1.0.1"
+      }
+    },
+    "__version__": "1.3.8"
+  }
+}

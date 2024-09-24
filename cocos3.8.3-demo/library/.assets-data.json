@@ -1,0 +1,42 @@
+{
+  "874734c2-4d8a-45fd-a21b-1e1117054907": {
+    "url": "db://assets/scene-2d.scene",
+    "value": {},
+    "versionCode": 1
+  },
+  "a9b6149c-2635-4404-afd2-2710c27b3c65": {
+    "url": "db://assets/NewComponent.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "87eab8ba-5ae2-46b4-9c18-6360e72f6b05": {
+    "url": "db://assets/gravityengine.mg.cocoscreator.min.js",
+    "value": {},
+    "versionCode": 1
+  },
+  "02401b9c-0fa2-4412-9a14-937886a30ba2": {
+    "url": "db://assets/scene.scene",
+    "value": {},
+    "versionCode": 1
+  },
+  "48e87ab9-f3a7-4f80-ae7d-ba8925e70435": {
+    "url": "db://assets/scene.scene",
+    "value": {
+      "depends": [
+        "48e87ab9-f3a7-4f80-ae7d-ba8925e70435"
+      ],
+      "dependScripts": []
+    },
+    "versionCode": 1
+  },
+  "a10325df-caff-4583-bf5e-56b9f9a6ad26": {
+    "url": "db://assets/libs/GravityAnalyticsSDK.d.ts",
+    "value": {},
+    "versionCode": 1
+  },
+  "60166b22-e17e-4a3f-9459-89a1995eb19f": {
+    "url": "db://assets/libs",
+    "value": {},
+    "versionCode": 1
+  }
+}
