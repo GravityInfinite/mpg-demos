@@ -51,6 +51,50 @@ declare class GravityAnalyticsAPI {
   getDistinctId(callback?: any): string;
   getAccountId(callback?: any): string;
   getPresetProperties(callback?: any): any;
+  getWechatOpenId(
+    code: string
+  ): Promise<{ session_key: string; openid: string; unionid: string }>;
+
+  queryDryRunInfo(traceId: string): Promise<{
+    data: {
+      postback_list: [];
+    };
+    extra: {};
+    code: number;
+    msg: string;
+  }>;
+  sendDryRunResult(
+    traceId: string,
+    action: string
+  ): Promise<{
+    data: {};
+    extra: {};
+    code: number;
+    msg: string;
+  }>;
+
+  onPayEvent(
+    pay_amount: number,
+    pay_type: string,
+    order_id: string,
+    pay_reason: string,
+    pay_method: string
+  ): void;
+  onRegisterEvent(): void;
+  onCreateRoleEvent(role_name: string): void;
+  onTutorialFinishEvent(): void;
+  onViewMallContentEvent(): void;
+  onViewActivityContentEvent(): void;
+  onAddToWishListEvent(wishType: string): void;
+  onShareEvent(shareType: "APP_MESSAGE" | "TIME_LINE"): void;
+  onUpdateLevelEvent(userLevel: number): void;
+
+  getKuaishouOpenId(
+    code: string
+  ): Promise<{ session_key: string; openid: string; unionid: string }>;
+  getDouyinOpenId(
+    code: string
+  ): Promise<{ session_key: string; openid: string; unionid: string }>;
   /**
    * 暂停/开启上报
    * @param {bool} enabled YES：开启上报 NO：暂停上报
