@@ -55,20 +55,13 @@ declare class GravityAnalyticsAPI {
     code: string
   ): Promise<{ session_key: string; openid: string; unionid: string }>;
 
-  queryDryRunInfo(traceId: string): Promise<{
-    data: {
-      postback_list: [];
-    };
-    extra: {};
-    code: number;
-    msg: string;
-  }>;
   sendDryRunResult(
     traceId: string,
     action: string
   ): Promise<{
-    data: {};
-    extra: {};
+    extra: {
+      error: string;
+    };
     code: number;
     msg: string;
   }>;
