@@ -24,6 +24,9 @@ declare class GravityAnalyticsAPI {
     pay_reason: string,
     pay_method: string
   ): void;
+  tryPayEventDryRun(pay_amount: number): void;
+  tryTutorialFinishEventDryRun(): void;
+  tryCreateRoleEventDryRun(role_name: string): void;
   adShowEvent(ad_type: string, ad_unit_id: string, otherProperties: any): void;
   bindTAThirdPlatform(taAccountId: string, taDistinctId: string): void;
   initialize(data: any): any;
@@ -80,7 +83,7 @@ declare class GravityAnalyticsAPI {
   onViewActivityContentEvent(): void;
   onAddToWishListEvent(wishType: string): void;
   onShareEvent(shareType: "APP_MESSAGE" | "TIME_LINE"): void;
-  onUpdateLevelEvent(userLevel: number): void;
+  onUpdateLevelEvent(userLevel: number, userPower: number): void;
 
   getKuaishouOpenId(
     code: string
