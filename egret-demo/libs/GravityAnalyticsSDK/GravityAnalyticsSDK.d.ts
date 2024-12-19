@@ -1,6 +1,6 @@
 declare class GravityAnalyticsAPI {
   constructor(config: any);
-  setupAndStart(): void;
+  setupAndStart(options: { clientId?: string; openId?: string }): void;
   track(eventName: string): void;
   track(eventName: string, properties: any): void;
   track(eventName: string, properties: any, time: any): void;
