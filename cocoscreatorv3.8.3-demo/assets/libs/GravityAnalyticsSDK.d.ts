@@ -2,6 +2,7 @@ declare class GravityAnalyticsAPI {
   constructor(config: any);
   setupAndStart(options: { clientId?: string; openId?: string }): void;
   track(eventName: string): void;
+  preInit(): void;
   track(eventName: string, properties: any): void;
   track(eventName: string, properties: any, time: any): void;
   track(eventName: string, properties: any, time: any, onComplete: any): void;
@@ -26,6 +27,7 @@ declare class GravityAnalyticsAPI {
   ): void;
   tryPayEventDryRun(pay_amount: number): void;
   tryTutorialFinishEventDryRun(): void;
+  tryRegisterEventDryRun(): void;
   tryCreateRoleEventDryRun(role_name: string): void;
   adShowEvent(ad_type: string, ad_unit_id: string, otherProperties: any): void;
   bindTAThirdPlatform(taAccountId: string, taDistinctId: string): void;
