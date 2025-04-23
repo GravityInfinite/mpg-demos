@@ -1,6 +1,6 @@
 declare class GravityAnalyticsAPI {
   constructor(config: any);
-  setupAndStart(options: { clientId?: string; openId?: string }): void;
+  setupAndStart(options?: { clientId?: string; openId?: string }): void;
   track(eventName: string): void;
   preInit(): void;
   track(eventName: string, properties: any): void;
@@ -25,6 +25,7 @@ declare class GravityAnalyticsAPI {
     pay_reason: string,
     pay_method: string
   ): void;
+  payEventToTencent(pay_amount: number): void;
   tryPayEventDryRun(pay_amount: number): void;
   tryTutorialFinishEventDryRun(): void;
   tryRegisterEventDryRun(): void;
@@ -80,17 +81,34 @@ declare class GravityAnalyticsAPI {
   ): void;
   onRegisterEvent(): void;
   onCreateRoleEvent(role_name: string): void;
+  onCreateRoleEventWithParams(role_name: string, params: any): void;
   onTutorialFinishEvent(): void;
+  onTutorialFinishEventWithParams(params: any): void;
   onViewMallContentEvent(): void;
+  onViewMallContentEventWithParams(params: any): void;
   onViewActivityContentEvent(): void;
+  onViewActivityContentEventWithParams(params: any): void;
   onAddToWishListEvent(wishType: string): void;
+  onAddToWishListEventWithParams(wishType: string, params: any): void;
   onShareEvent(shareType: "APP_MESSAGE" | "TIME_LINE"): void;
+  onShareEventWithParams(
+    shareType: "APP_MESSAGE" | "TIME_LINE",
+    params: any
+  ): void;
   onUpdateLevelEvent(userLevel: number, userPower: number): void;
+  onUpdateLevelEventWithParams(
+    userLevel: number,
+    userPower: number,
+    params: any
+  ): void;
 
   getKuaishouOpenId(
     code: string
   ): Promise<{ session_key: string; openid: string; unionid: string }>;
   getDouyinOpenId(
+    code: string
+  ): Promise<{ session_key: string; openid: string; unionid: string }>;
+  getBilibiliOpenId(
     code: string
   ): Promise<{ session_key: string; openid: string; unionid: string }>;
   /**
